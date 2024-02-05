@@ -2,19 +2,19 @@ The Remaining of Us
 
 Zombie-shooter 2D survival game written in C++ using SFML library.
 
-##Important
+# Important
 For now, the game can crash from time to time during start-up due to
 the sound assets being loaded in a parallel thread using promise library
 which does not always comply with SFML's sound buffer objects.
 
-##Brief description of gameplay
+# Brief description of gameplay
 You are the last man standing between your bunker and countless dead.
 Strafe, shoot, reload and slay zombies for as long as you can!
 
-##Installation
+# Installation
 Simply unrar the package and run the .exe file.
 
-##Assets
+# Assets
 All the used graphics were created by me in MS Paint on maximum zoom
 to achieve a sweet pixel-art style.
 
