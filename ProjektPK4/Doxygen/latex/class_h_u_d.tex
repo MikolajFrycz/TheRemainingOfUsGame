@@ -1,0 +1,135 @@
+\doxysection{HUD Class Reference}
+\hypertarget{class_h_u_d}{}\label{class_h_u_d}\index{HUD@{HUD}}
+
+
+{\ttfamily \#include $<$HUD.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_h_u_d_a568b8ee1591f9ba3ed36ae05966f6b56}\label{class_h_u_d_a568b8ee1591f9ba3ed36ae05966f6b56} 
+{\bfseries HUD} ()
+\begin{DoxyCompactList}\small\item\em \doxylink{class_h_u_d}{HUD} default constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_h_u_d_a4c4f19593aac42434d66e63b1ba140cb}{HUD}} (int score\+\_\+start, int max\+\_\+ammo\+\_\+start, std\+::string player\+\_\+name, std\+::string font\+\_\+path)
+\item 
+\Hypertarget{class_h_u_d_a1e1140a40e4bf72a45acf9f7b2119323}\label{class_h_u_d_a1e1140a40e4bf72a45acf9f7b2119323} 
+{\bfseries \texorpdfstring{$\sim$}{\string~}\+HUD} ()
+\begin{DoxyCompactList}\small\item\em \doxylink{class_h_u_d}{HUD} destructor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_h_u_d_a84696b90ce9824c1b2713572d692e022}{draw\+HUD}} (sf\+::\+Render\+Window \&target\+\_\+window)
+\item 
+void \mbox{\hyperlink{class_h_u_d_ad6c0bd7f2bd14ad9672090969b293453}{update\+Score}} (int added\+\_\+ammount)
+\item 
+void \mbox{\hyperlink{class_h_u_d_a3a993c8cba58fd177ad9d3f438bacaca}{change\+Max\+Ammo}} (int new\+\_\+ammo)
+\item 
+void \mbox{\hyperlink{class_h_u_d_a9626644cc0b1c5e81fb40e78bd71e284}{set\+HUDfor2nd\+Player}} (sf\+::\+Vector2f offset)
+\item 
+void \mbox{\hyperlink{class_h_u_d_a76ee6f6bab398161ebcfc8dc4faf8429}{change\+Curr\+Ammo}} (int add\+\_\+to\+\_\+ammo)
+\item 
+\Hypertarget{class_h_u_d_a5e0870f66b229f0fdddafd7fe0f45ab9}\label{class_h_u_d_a5e0870f66b229f0fdddafd7fe0f45ab9} 
+int \& {\bfseries get\+Score\+Count\+Int} ()
+\begin{DoxyCompactList}\small\item\em Getter used for getting score as an int. \end{DoxyCompactList}\item 
+\Hypertarget{class_h_u_d_a008a8b4a3db49cb092e52501a20d2070}\label{class_h_u_d_a008a8b4a3db49cb092e52501a20d2070} 
+void {\bfseries reset\+HUD} ()
+\begin{DoxyCompactList}\small\item\em Resets hud\textquotesingle{}s values. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This class is used for creating and displaying heads-\/up-\/display
+
+\doxylink{class_h_u_d}{HUD} can display current ammo, max ammo, score etc. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_h_u_d_a4c4f19593aac42434d66e63b1ba140cb}\label{class_h_u_d_a4c4f19593aac42434d66e63b1ba140cb} 
+\index{HUD@{HUD}!HUD@{HUD}}
+\index{HUD@{HUD}!HUD@{HUD}}
+\doxysubsubsection{\texorpdfstring{HUD()}{HUD()}}
+{\footnotesize\ttfamily HUD\+::\+HUD (\begin{DoxyParamCaption}\item[{int}]{score\+\_\+start,  }\item[{int}]{max\+\_\+ammo\+\_\+start,  }\item[{std\+::string}]{player\+\_\+name,  }\item[{std\+::string}]{font\+\_\+path }\end{DoxyParamCaption})}
+
+Multi-\/argument constructor
+
+
+\begin{DoxyParams}{Parameters}
+{\em score\+\_\+start} & Initial score int \\
+\hline
+{\em max\+\_\+ammo\+\_\+start} & Initial max ammo \\
+\hline
+{\em player\+\_\+name} & \doxylink{class_player}{Player}\textquotesingle{}s name \\
+\hline
+{\em font\+\_\+path} & Directory of the font file ~\newline
+ \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_h_u_d_a76ee6f6bab398161ebcfc8dc4faf8429}\label{class_h_u_d_a76ee6f6bab398161ebcfc8dc4faf8429} 
+\index{HUD@{HUD}!changeCurrAmmo@{changeCurrAmmo}}
+\index{changeCurrAmmo@{changeCurrAmmo}!HUD@{HUD}}
+\doxysubsubsection{\texorpdfstring{changeCurrAmmo()}{changeCurrAmmo()}}
+{\footnotesize\ttfamily void HUD\+::change\+Curr\+Ammo (\begin{DoxyParamCaption}\item[{int}]{add\+\_\+to\+\_\+ammo }\end{DoxyParamCaption})}
+
+This method changes current ammo
+
+
+\begin{DoxyParams}{Parameters}
+{\em add\+\_\+to\+\_\+ammo} & Ammount added to ammo \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_h_u_d_a3a993c8cba58fd177ad9d3f438bacaca}\label{class_h_u_d_a3a993c8cba58fd177ad9d3f438bacaca} 
+\index{HUD@{HUD}!changeMaxAmmo@{changeMaxAmmo}}
+\index{changeMaxAmmo@{changeMaxAmmo}!HUD@{HUD}}
+\doxysubsubsection{\texorpdfstring{changeMaxAmmo()}{changeMaxAmmo()}}
+{\footnotesize\ttfamily void HUD\+::change\+Max\+Ammo (\begin{DoxyParamCaption}\item[{int}]{new\+\_\+ammo }\end{DoxyParamCaption})}
+
+Changes max ammo value
+
+
+\begin{DoxyParams}{Parameters}
+{\em new\+\_\+ammo} & New ammo value \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_h_u_d_a84696b90ce9824c1b2713572d692e022}\label{class_h_u_d_a84696b90ce9824c1b2713572d692e022} 
+\index{HUD@{HUD}!drawHUD@{drawHUD}}
+\index{drawHUD@{drawHUD}!HUD@{HUD}}
+\doxysubsubsection{\texorpdfstring{drawHUD()}{drawHUD()}}
+{\footnotesize\ttfamily void HUD\+::draw\+HUD (\begin{DoxyParamCaption}\item[{sf\+::\+Render\+Window \&}]{target\+\_\+window }\end{DoxyParamCaption})}
+
+This method draws \doxylink{class_h_u_d}{HUD} on screen
+
+
+\begin{DoxyParams}{Parameters}
+{\em target\+\_\+window} & Target window \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_h_u_d_a9626644cc0b1c5e81fb40e78bd71e284}\label{class_h_u_d_a9626644cc0b1c5e81fb40e78bd71e284} 
+\index{HUD@{HUD}!setHUDfor2ndPlayer@{setHUDfor2ndPlayer}}
+\index{setHUDfor2ndPlayer@{setHUDfor2ndPlayer}!HUD@{HUD}}
+\doxysubsubsection{\texorpdfstring{setHUDfor2ndPlayer()}{setHUDfor2ndPlayer()}}
+{\footnotesize\ttfamily void HUD\+::set\+HUDfor2nd\+Player (\begin{DoxyParamCaption}\item[{sf\+::\+Vector2f}]{offset }\end{DoxyParamCaption})}
+
+Adapts the hud for 2nd player
+
+
+\begin{DoxyParams}{Parameters}
+{\em offset} & Vector of floats which indicates how the hud should be moved from it\textquotesingle{}s initial position \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_h_u_d_ad6c0bd7f2bd14ad9672090969b293453}\label{class_h_u_d_ad6c0bd7f2bd14ad9672090969b293453} 
+\index{HUD@{HUD}!updateScore@{updateScore}}
+\index{updateScore@{updateScore}!HUD@{HUD}}
+\doxysubsubsection{\texorpdfstring{updateScore()}{updateScore()}}
+{\footnotesize\ttfamily void HUD\+::update\+Score (\begin{DoxyParamCaption}\item[{int}]{added\+\_\+ammount }\end{DoxyParamCaption})}
+
+Used to update score in \doxylink{class_h_u_d}{HUD}
+
+
+\begin{DoxyParams}{Parameters}
+{\em added\+\_\+ammount} & Ammount added to the score \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+HUD.\+h\item 
+HUD.\+cpp\end{DoxyCompactItemize}

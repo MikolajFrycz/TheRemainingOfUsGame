@@ -1,0 +1,132 @@
+\doxysection{Death\+Screen Class Reference}
+\hypertarget{class_death_screen}{}\label{class_death_screen}\index{DeathScreen@{DeathScreen}}
+
+
+{\ttfamily \#include $<$Death\+Screen.\+h$>$}
+
+Inheritance diagram for Death\+Screen\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_death_screen}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_death_screen_a8e360dfcbf2bdd08fbd451ca6bc41ab2}{Death\+Screen}} (int k\+\_\+time, std\+::string f\+\_\+path, std\+::filesystem\+::path backgrd\+\_\+path)
+\item 
+void \mbox{\hyperlink{class_death_screen_a2b15c32cf00a85959c84e2c716c1f886}{set\+Values}} (sf\+::\+Render\+Window \&window, int val)
+\item 
+void \mbox{\hyperlink{class_death_screen_ac871b43fe3d4c63e9ca80e296c26c9be}{set2\+Player\+Values}} (sf\+::\+Render\+Window \&window, int val, int which\+\_\+won)
+\item 
+void \mbox{\hyperlink{class_death_screen_a0a4d868fba6bc88cd1f278f1d7c160ee}{move\+Down}} ()
+\begin{DoxyCompactList}\small\item\em Polimorphic move\+Down method. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_menu}{Menu}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_menu_a2a68482b07fffe312b800a4407b6ccc2}{Menu}} (int k\+\_\+time, std\+::string f\+\_\+path, std\+::filesystem\+::path backgrd\+\_\+path)
+\item 
+{\bfseries \texorpdfstring{$\sim$}{\string~}\+Menu} ()
+\begin{DoxyCompactList}\small\item\em \doxylink{class_menu}{Menu} destructor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_menu_a1443dcfd1c1c9844c40658d752c1fbab}{draw}} (sf\+::\+Render\+Window \&window)
+\item 
+virtual void {\bfseries set\+Values} ()
+\begin{DoxyCompactList}\small\item\em Initiates menu\textquotesingle{}s values. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_menu_a9686e8857d17d1d8411765f3482066f9}{move\+Up}} (int min\+\_\+opt)
+\item 
+virtual void \mbox{\hyperlink{class_menu_abbec620bd41608fba287400ead4467aa}{move\+Down}} ()
+\begin{DoxyCompactList}\small\item\em Used to switch to lower option. \end{DoxyCompactList}\item 
+int \& {\bfseries get\+Keytime} ()
+\begin{DoxyCompactList}\small\item\em Getter which returns keytime. \end{DoxyCompactList}\item 
+int {\bfseries get\+Selected\+Item} ()
+\begin{DoxyCompactList}\small\item\em Getter which returns selected item. \end{DoxyCompactList}\item 
+sf\+::\+Font \& {\bfseries get\+Font} ()
+\begin{DoxyCompactList}\small\item\em Getter which returns Font. \end{DoxyCompactList}\item 
+void {\bfseries set\+Text} (int i, sf\+::\+Text text)
+\begin{DoxyCompactList}\small\item\em Setter which sets text value to the adequate Text by its index i. \end{DoxyCompactList}\item 
+sf\+::\+Sprite \& {\bfseries get\+Background} ()
+\begin{DoxyCompactList}\small\item\em Getter which returns background sprite. \end{DoxyCompactList}\item 
+int \& {\bfseries get\+Selected\+Item\+Index} ()
+\begin{DoxyCompactList}\small\item\em Getter which returns selected item index. \end{DoxyCompactList}\item 
+sf\+::\+Text \& {\bfseries get\+Menu\+Text} (int i)
+\begin{DoxyCompactList}\small\item\em Getter which returns option\textquotesingle{}s text by it\textquotesingle{}s id i. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A \doxylink{class_menu}{Menu} derived class which acts like a menu but is used as a deathscreen
+
+It could also be called Deathscreen \doxylink{class_menu}{Menu} 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_death_screen_a8e360dfcbf2bdd08fbd451ca6bc41ab2}\label{class_death_screen_a8e360dfcbf2bdd08fbd451ca6bc41ab2} 
+\index{DeathScreen@{DeathScreen}!DeathScreen@{DeathScreen}}
+\index{DeathScreen@{DeathScreen}!DeathScreen@{DeathScreen}}
+\doxysubsubsection{\texorpdfstring{DeathScreen()}{DeathScreen()}}
+{\footnotesize\ttfamily Death\+Screen\+::\+Death\+Screen (\begin{DoxyParamCaption}\item[{int}]{k\+\_\+time,  }\item[{std\+::string}]{f\+\_\+path,  }\item[{std\+::filesystem\+::path}]{backgrd\+\_\+path }\end{DoxyParamCaption})}
+
+Multi-\/argument constructor
+
+
+\begin{DoxyParams}{Parameters}
+{\em k\+\_\+time} & Keytime value \\
+\hline
+{\em f\+\_\+path} & Font file\textquotesingle{}s directory \\
+\hline
+{\em backgrd\+\_\+path} & Background png\textquotesingle{}s directory \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_death_screen_a0a4d868fba6bc88cd1f278f1d7c160ee}\label{class_death_screen_a0a4d868fba6bc88cd1f278f1d7c160ee} 
+\index{DeathScreen@{DeathScreen}!moveDown@{moveDown}}
+\index{moveDown@{moveDown}!DeathScreen@{DeathScreen}}
+\doxysubsubsection{\texorpdfstring{moveDown()}{moveDown()}}
+{\footnotesize\ttfamily void Death\+Screen\+::move\+Down (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Polimorphic move\+Down method. 
+
+
+
+Reimplemented from \mbox{\hyperlink{class_menu_abbec620bd41608fba287400ead4467aa}{Menu}}.
+
+\Hypertarget{class_death_screen_ac871b43fe3d4c63e9ca80e296c26c9be}\label{class_death_screen_ac871b43fe3d4c63e9ca80e296c26c9be} 
+\index{DeathScreen@{DeathScreen}!set2PlayerValues@{set2PlayerValues}}
+\index{set2PlayerValues@{set2PlayerValues}!DeathScreen@{DeathScreen}}
+\doxysubsubsection{\texorpdfstring{set2PlayerValues()}{set2PlayerValues()}}
+{\footnotesize\ttfamily void Death\+Screen\+::set2\+Player\+Values (\begin{DoxyParamCaption}\item[{sf\+::\+Render\+Window \&}]{window,  }\item[{int}]{val,  }\item[{int}]{which\+\_\+won }\end{DoxyParamCaption})}
+
+This method initializes deathscreen for two-\/player mode
+
+
+\begin{DoxyParams}{Parameters}
+{\em window} & Target window \\
+\hline
+{\em val} & Score \\
+\hline
+{\em which\+\_\+won} & States which player won the game (had a higher score/draw also possible) \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_death_screen_a2b15c32cf00a85959c84e2c716c1f886}\label{class_death_screen_a2b15c32cf00a85959c84e2c716c1f886} 
+\index{DeathScreen@{DeathScreen}!setValues@{setValues}}
+\index{setValues@{setValues}!DeathScreen@{DeathScreen}}
+\doxysubsubsection{\texorpdfstring{setValues()}{setValues()}}
+{\footnotesize\ttfamily void Death\+Screen\+::set\+Values (\begin{DoxyParamCaption}\item[{sf\+::\+Render\+Window \&}]{window,  }\item[{int}]{val }\end{DoxyParamCaption})}
+
+This method initializes the deathscreen
+
+
+\begin{DoxyParams}{Parameters}
+{\em window} & Target window \\
+\hline
+{\em val} & Score \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Death\+Screen.\+h\item 
+Death\+Screen.\+cpp\end{DoxyCompactItemize}

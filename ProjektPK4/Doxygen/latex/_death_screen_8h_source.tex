@@ -1,0 +1,19 @@
+\doxysection{Death\+Screen.\+h}
+\hypertarget{_death_screen_8h_source}{}\label{_death_screen_8h_source}\index{DeathScreen.h@{DeathScreen.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#include\ "{}Menu.h"{}}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00007\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_death_screen}{DeathScreen}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_menu}{Menu}}}
+\DoxyCodeLine{00008\ \{}
+\DoxyCodeLine{00010\ \ \ \ \ sf::Text\ dstext[4];}
+\DoxyCodeLine{00012\ \ \ \ \ \textcolor{keywordtype}{int}\ score\_ct\_int;}
+\DoxyCodeLine{00013\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00019\ \ \ \ \ \mbox{\hyperlink{class_death_screen}{DeathScreen}}(\textcolor{keywordtype}{int}\ k\_time,\ std::string\ f\_path,\ std::filesystem::path\ backgrd\_path);}
+\DoxyCodeLine{00024\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_menu_a8951110fff78c7d5fee30c007e2a75cc}{setValues}}(sf::RenderWindow\ \&window,\ \textcolor{keywordtype}{int}\ val);}
+\DoxyCodeLine{00030\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_death_screen_ac871b43fe3d4c63e9ca80e296c26c9be}{set2PlayerValues}}(sf::RenderWindow\&\ window,\ \textcolor{keywordtype}{int}\ val,\ \textcolor{keywordtype}{int}\ which\_won);}
+\DoxyCodeLine{00032\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_death_screen_a0a4d868fba6bc88cd1f278f1d7c160ee}{moveDown}}();}
+\DoxyCodeLine{00033\ \};}
+
+\end{DoxyCode}

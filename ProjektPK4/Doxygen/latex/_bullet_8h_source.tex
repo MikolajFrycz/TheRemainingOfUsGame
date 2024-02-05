@@ -1,0 +1,26 @@
+\doxysection{Bullet.\+h}
+\hypertarget{_bullet_8h_source}{}\label{_bullet_8h_source}\index{Bullet.h@{Bullet.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#include\ "{}Entity.h"{}}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00007\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_bullet}{Bullet}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_entity}{Entity}}}
+\DoxyCodeLine{00008\ \{}
+\DoxyCodeLine{00009\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00011\ \ \ \ \ sf::RectangleShape\ bullet\_shape;}
+\DoxyCodeLine{00013\ \ \ \ \ \textcolor{keywordtype}{bool}\ isShot;}
+\DoxyCodeLine{00015\ \ \ \ \ \textcolor{keywordtype}{int}\ shootTimer;}
+\DoxyCodeLine{00016\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00022\ \ \ \ \ \mbox{\hyperlink{class_bullet}{Bullet}}(sf::Vector2f\ pos,\ sf::Vector2f\ size,\ \textcolor{keywordtype}{int}\ sht\_timer);}
+\DoxyCodeLine{00024\ \ \ \ \ \mbox{\hyperlink{class_bullet_aaeb5cb41d7db89f49007b08b41f1bfcf}{\string~Bullet}}();}
+\DoxyCodeLine{00026\ \ \ \ \ sf::RectangleShape\ \mbox{\hyperlink{class_bullet_ae51cbdd5ce3a727ebb8a417ac3d780b6}{getShape}}();}
+\DoxyCodeLine{00030\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_bullet_a1f082daf53183651a8faf0e83b4cfff4}{resetPos}}(sf::Vector2f\ pos);}
+\DoxyCodeLine{00032\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_bullet_a430ff35a665554fbfc59f368eefe75e2}{getIsShot}}();}
+\DoxyCodeLine{00034\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_bullet_a1293caa8e4f96b2a367e91152949f825}{isShotTrue}}();}
+\DoxyCodeLine{00036\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_bullet_a7ea3108eeda087154d3857812e513b4d}{isShotFalse}}();}
+\DoxyCodeLine{00038\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_bullet_a1f43e4c63f744cb7009fd6830685ec63}{getShotTimer}}();}
+\DoxyCodeLine{00039\ \};}
+\DoxyCodeLine{00040\ }
+
+\end{DoxyCode}

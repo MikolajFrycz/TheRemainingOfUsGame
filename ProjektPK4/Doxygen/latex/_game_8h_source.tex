@@ -1,0 +1,91 @@
+\doxysection{Game.\+h}
+\hypertarget{_game_8h_source}{}\label{_game_8h_source}\index{Game.h@{Game.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ }
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <fstream>}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ <filesystem>}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ <regex>}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ <ranges>}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ <algorithm>}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ <tuple>}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ <cmath>}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#include\ <chrono>}}
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#include\ <future>}}
+\DoxyCodeLine{00015\ }
+\DoxyCodeLine{00016\ \textcolor{comment}{//Custom\ classes}}
+\DoxyCodeLine{00017\ \textcolor{preprocessor}{\#include\ "{}Player.h"{}}}
+\DoxyCodeLine{00018\ \textcolor{preprocessor}{\#include\ "{}Menu.h"{}}}
+\DoxyCodeLine{00019\ \textcolor{preprocessor}{\#include\ "{}HUD.h"{}}}
+\DoxyCodeLine{00020\ \textcolor{preprocessor}{\#include\ "{}Zombie.h"{}}}
+\DoxyCodeLine{00021\ \textcolor{preprocessor}{\#include\ "{}DeathScreen.h"{}}}
+\DoxyCodeLine{00022\ \textcolor{preprocessor}{\#include\ "{}Functions.h"{}}}
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00024\ \textcolor{comment}{//SFML\ libraries}}
+\DoxyCodeLine{00025\ \textcolor{preprocessor}{\#include\ "{}SFML\(\backslash\)System.hpp"{}}}
+\DoxyCodeLine{00026\ \textcolor{preprocessor}{\#include\ "{}SFML\(\backslash\)Audio.hpp"{}}}
+\DoxyCodeLine{00027\ \textcolor{preprocessor}{\#include\ "{}SFML\(\backslash\)Graphics.hpp"{}}}
+\DoxyCodeLine{00028\ \textcolor{preprocessor}{\#include\ "{}SFML\(\backslash\)Network.hpp"{}}}
+\DoxyCodeLine{00029\ \textcolor{preprocessor}{\#include\ "{}SFML\(\backslash\)Window.hpp"{}}}
+\DoxyCodeLine{00030\ }
+\DoxyCodeLine{00031\ }
+\DoxyCodeLine{00032\ }
+\DoxyCodeLine{00036\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_game}{Game}}}
+\DoxyCodeLine{00037\ \{}
+\DoxyCodeLine{00038\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00040\ \ \ \ \ \textcolor{keywordtype}{int}\ opt\ =\ -\/4;}
+\DoxyCodeLine{00042\ \ \ \ \ sf::RenderWindow\ window;}
+\DoxyCodeLine{00044\ \ \ \ \ sf::Texture\ texture;}
+\DoxyCodeLine{00046\ \ \ \ \ sf::Texture\ intro\_texture;}
+\DoxyCodeLine{00048\ \ \ \ \ sf::Texture\ outro\_texture;}
+\DoxyCodeLine{00050\ \ \ \ \ sf::Texture\ instruct\_texture;}
+\DoxyCodeLine{00052\ \ \ \ \ sf::Sprite\ background;}
+\DoxyCodeLine{00054\ \ \ \ \ sf::Sprite\ intro;}
+\DoxyCodeLine{00056\ \ \ \ \ sf::Sprite\ outro;}
+\DoxyCodeLine{00058\ \ \ \ \ sf::Sprite\ instruct;}
+\DoxyCodeLine{00060\ \ \ \ \ std::vector<Zombie>\ vec\_of\_zombies;}
+\DoxyCodeLine{00061\ }
+\DoxyCodeLine{00063\ \ \ \ \ sf::Text\ player\_name\_render;}
+\DoxyCodeLine{00065\ \ \ \ \ std::vector<sf::Text>\ vec\_of\_leaderboard\_texts;}
+\DoxyCodeLine{00067\ \ \ \ \ sf::Text\ nickInputPrompt;}
+\DoxyCodeLine{00069\ \ \ \ \ sf::Font\ font;}
+\DoxyCodeLine{00071\ \ \ \ \ std::string\ player\_name;}
+\DoxyCodeLine{00072\ \ \ \ \ }
+\DoxyCodeLine{00074\ \ \ \ \ std::tuple<int,\ std::string>\ player\_n\_highscore;}
+\DoxyCodeLine{00076\ \ \ \ \ std::vector<std::tuple<int,\ std::string>>\ vec\_of\_pairs;}
+\DoxyCodeLine{00078\ \ \ \ \ std::filesystem::path\ leaderboard\_file;}
+\DoxyCodeLine{00080\ \ \ \ \ std::regex\ input\_regex;}
+\DoxyCodeLine{00081\ }
+\DoxyCodeLine{00083\ \ \ \ \ sf::SoundBuffer\ intro\_buffer;}
+\DoxyCodeLine{00085\ \ \ \ \ sf::SoundBuffer\ game\_buffer;}
+\DoxyCodeLine{00087\ \ \ \ \ sf::SoundBuffer\ deathscreen\_buffer;}
+\DoxyCodeLine{00089\ \ \ \ \ sf::SoundBuffer\ zombie\_buffer;}
+\DoxyCodeLine{00091\ \ \ \ \ sf::SoundBuffer\ shot\_buffer;}
+\DoxyCodeLine{00093\ \ \ \ \ sf::SoundBuffer\ reload\_buffer;}
+\DoxyCodeLine{00094\ \ \ \ \ }
+\DoxyCodeLine{00096\ \ \ \ \ sf::Sound\ intro\_sound;}
+\DoxyCodeLine{00098\ \ \ \ \ sf::Sound\ game\_sound;}
+\DoxyCodeLine{00100\ \ \ \ \ sf::Sound\ deathscreen\_sound;}
+\DoxyCodeLine{00102\ \ \ \ \ sf::Sound\ zombie\_sound[24];}
+\DoxyCodeLine{00104\ \ \ \ \ sf::Sound\ shot\_sound[24];}
+\DoxyCodeLine{00106\ \ \ \ \ sf::Sound\ reload\_sound[24];}
+\DoxyCodeLine{00108\ \ \ \ \ sf::Clock\ intro\_outro\_clk;}
+\DoxyCodeLine{00109\ }
+\DoxyCodeLine{00110\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00112\ \ \ \ \ \mbox{\hyperlink{class_game_ad59df6562a58a614fda24622d3715b65}{Game}}();}
+\DoxyCodeLine{00114\ \ \ \ \ \mbox{\hyperlink{class_game_ae3d112ca6e0e55150d2fdbc704474530}{\string~Game}}();}
+\DoxyCodeLine{00116\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_game_a1ab78f5ed0d5ea879157357cf2fb2afa}{run}}();}
+\DoxyCodeLine{00134\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_game_a75dd8a20e9d687496dde6331f71cd576}{Update}}(\mbox{\hyperlink{class_player}{Player}}\&\ player1,\ \mbox{\hyperlink{class_player}{Player}}\&\ player2,\ \mbox{\hyperlink{class_zombie}{Zombie}}\&\ basiczombie,\ \mbox{\hyperlink{class_zombie}{Zombie}}\&\ strong\_zombie,\ \mbox{\hyperlink{class_zombie}{Zombie}}\&\ fast\_zombie,\ \mbox{\hyperlink{class_bullet}{Bullet}}\&\ bullet,}
+\DoxyCodeLine{00135\ \ \ \ \ \ \ \ \ sf::Clock\&\ reloadClock,\ sf::Clock\&\ reloadClock2,\ \mbox{\hyperlink{class_h_u_d}{HUD}}\&\ hud,\ \mbox{\hyperlink{class_h_u_d}{HUD}}\ \&hud2,\ \mbox{\hyperlink{class_menu}{Menu}}\&\ menu,\ \mbox{\hyperlink{class_death_screen}{DeathScreen}}\&\ deathscreen,\ \mbox{\hyperlink{class_death_screen}{DeathScreen}}\ \&duo\_ds,\ \textcolor{keywordtype}{int}\&\ option);}
+\DoxyCodeLine{00142\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_game_a3912dba4118e9466e14cd1110dc9b3ba}{processEvents}}(\mbox{\hyperlink{class_zombie}{Zombie}}\&\ zombie,\ \mbox{\hyperlink{class_zombie}{Zombie}}\&\ strong\_zombie,\ \mbox{\hyperlink{class_zombie}{Zombie}}\&\ fast\_zombie);}
+\DoxyCodeLine{00151\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_game_a6adc08bdab67e962047313788b025f60}{zombieHandling}}(\mbox{\hyperlink{class_player}{Player}}\&\ player1,\ \mbox{\hyperlink{class_zombie}{Zombie}}\&\ zombie,\ \mbox{\hyperlink{class_zombie}{Zombie}}\&\ strong\_zombie,\ \mbox{\hyperlink{class_zombie}{Zombie}}\&\ fast\_zombie,\ \mbox{\hyperlink{class_h_u_d}{HUD}}\&\ hud);}
+\DoxyCodeLine{00155\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_game_a2d38a97814c1a305c75070117b8c856c}{zombieHandling\_2Player}}(\mbox{\hyperlink{class_player}{Player}}\&\ player1,\ \mbox{\hyperlink{class_player}{Player}}\&\ player2,\ \mbox{\hyperlink{class_zombie}{Zombie}}\&\ zombie,\ \mbox{\hyperlink{class_zombie}{Zombie}}\&\ strong\_zombie,\ \mbox{\hyperlink{class_zombie}{Zombie}}\&\ fast\_zombie,\ \mbox{\hyperlink{class_h_u_d}{HUD}}\&\ hud,\ \mbox{\hyperlink{class_h_u_d}{HUD}}\&\ hud2);}
+\DoxyCodeLine{00159\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_game_ab1b865a3b914668a5e1b807c02fd277c}{loadPairsFromFile}}(std::filesystem::path\ path);}
+\DoxyCodeLine{00163\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_game_ae2ab011d27938712258115036e2507c4}{drawPNHPairs}}(sf::RenderWindow\&\ target\_window);}
+\DoxyCodeLine{00164\ \};}
+
+\end{DoxyCode}

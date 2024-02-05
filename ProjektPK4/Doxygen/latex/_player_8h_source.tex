@@ -1,0 +1,48 @@
+\doxysection{Player.\+h}
+\hypertarget{_player_8h_source}{}\label{_player_8h_source}\index{Player.h@{Player.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once\ }}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#include\ "{}Bullet.h"{}}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ "{}Entity.h"{}}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ "{}HUD.h"{}}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ "{}SFML\(\backslash\)Audio.hpp"{}}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ <future>}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00011\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_player}{Player}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_entity}{Entity}}}
+\DoxyCodeLine{00012\ \{}
+\DoxyCodeLine{00013\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00015\ \ \ \ \ \textcolor{keywordtype}{int}\ max\_ammo;}
+\DoxyCodeLine{00017\ \ \ \ \ \textcolor{keywordtype}{int}\ curr\_ammo;}
+\DoxyCodeLine{00019\ \ \ \ \ \textcolor{keywordtype}{int}\ temp\_ammo\_for\_hud;}
+\DoxyCodeLine{00021\ \ \ \ \ std::vector<sf::RectangleShape>\ bullet\_clip;}
+\DoxyCodeLine{00023\ \ \ \ \ \textcolor{keywordtype}{int}\ shootAnimationTimer\ =\ 0;}
+\DoxyCodeLine{00025\ \ \ \ \ \textcolor{keywordtype}{bool}\ isShooting\ =\ \textcolor{keyword}{false};}
+\DoxyCodeLine{00027\ \ \ \ \ \textcolor{keywordtype}{bool}\ isReloading\ =\ \textcolor{keyword}{false};}
+\DoxyCodeLine{00029\ \ \ \ \ sf::Vector2f\ start\_pos;}
+\DoxyCodeLine{00031\ \ \ \ \ \textcolor{keywordtype}{int}\ sht\_timer;}
+\DoxyCodeLine{00032\ }
+\DoxyCodeLine{00033\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00035\ \ \ \ \ \mbox{\hyperlink{class_player_affe0cc3cb714f6deb4e62f0c0d3f1fd8}{Player}}();}
+\DoxyCodeLine{00042\ \ \ \ \ \mbox{\hyperlink{class_player_affe0cc3cb714f6deb4e62f0c0d3f1fd8}{Player}}(\textcolor{keywordtype}{int}\ lives\_ct,\ \textcolor{keywordtype}{int}\ max\_amm,\ \textcolor{keywordtype}{int}\ curr\_amm,\ sf::Vector2f\ pos);}
+\DoxyCodeLine{00044\ \ \ \ \ \mbox{\hyperlink{class_player_a749d2c00e1fe0f5c2746f7505a58c062}{\string~Player}}();}
+\DoxyCodeLine{00046\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_player_a66461422eb34caea170eb3eb9d41a2a0}{resetAmmo}}(\mbox{\hyperlink{class_h_u_d}{HUD}}\&\ hud);}
+\DoxyCodeLine{00050\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_player_a881b267d105de7cdb8db354cf2a2451c}{player1Movement}}(\textcolor{keywordtype}{int}\ windsize);}
+\DoxyCodeLine{00054\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_player_adf5e2c213a38b37468c0f8e13aa2a153}{player2Movement}}(\textcolor{keywordtype}{int}\ windsize);}
+\DoxyCodeLine{00059\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_player_a03b5b98d95c5792e82de489b14cbdf80}{playerReload}}(sf::Clock\&\ reloadClock,\ sf::Keyboard::Key\ key);}
+\DoxyCodeLine{00068\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_player_a8d73938549cbfec86188962ad2b9ab5b}{shootPistol}}(sf::Keyboard::Key\ shootkey,\ \mbox{\hyperlink{class_bullet}{Bullet}}\&\ bullet,\ sf::RenderWindow\&\ target\_window,\ sf::Clock\&\ reloadClock,\ \mbox{\hyperlink{class_h_u_d}{HUD}}\&\ hud);}
+\DoxyCodeLine{00070\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_player_a1f39fabe5698d0b5e30c24a4eded085e}{getBulletClipSize}}();}
+\DoxyCodeLine{00072\ \ \ \ \ std::vector<sf::RectangleShape>\&\ \mbox{\hyperlink{class_player_ad6f932af2ef6de2ec8b068f77f3fb33c}{getBulletClip}}();}
+\DoxyCodeLine{00074\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_player_a4fa4a1864944b4794e0ef00867d80374}{getCurrAmmo}}();}
+\DoxyCodeLine{00076\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_player_a0499495b81cb64a03de0df2df1310392}{getMaxAmmo}}();}
+\DoxyCodeLine{00078\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_player_afb5eb398a2804a7b6a7b86eee953b64a}{getIsShooting}}();}
+\DoxyCodeLine{00080\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_player_a9ac5983a7eb936e182a88bacc2d47922}{getIsReloading}}();}
+\DoxyCodeLine{00084\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_player_a716cad9b330e12615263c9e1e7c4fd98}{changeIsShootingValue}}(\textcolor{keywordtype}{bool}\ val);}
+\DoxyCodeLine{00086\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_player_aacaad06a8bebff9a8a903feb13774c85}{playerReset}}();}
+\DoxyCodeLine{00090\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_player_a4face082a302ee08dc9ab1100a7f192f}{shootingAnimation}}(sf::Clock\ reloadclock);}
+\DoxyCodeLine{00095\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_player_a9cc391aef32ca8613b6ad46a4c09d13f}{reloadAnimation}}(sf::Clock\ reloadclock,\ \mbox{\hyperlink{class_h_u_d}{HUD}}\ \&hud);}
+\DoxyCodeLine{00099\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_player_a8e6c709cfa204fbcf1377fd0391cfa9d}{Draw}}(sf::RenderWindow\&\ target);}
+\DoxyCodeLine{00101\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_player_a04f7abd5f28dc33386ad6eda60a6766b}{getShotTimer}}();}
+\DoxyCodeLine{00102\ \};}
+
+\end{DoxyCode}

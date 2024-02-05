@@ -1,0 +1,174 @@
+\doxysection{Entity Class Reference}
+\hypertarget{class_entity}{}\label{class_entity}\index{Entity@{Entity}}
+
+
+{\ttfamily \#include $<$Entity.\+h$>$}
+
+Inheritance diagram for Entity\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_entity}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_entity_a980f368aa07ce358583982821533a54a}\label{class_entity_a980f368aa07ce358583982821533a54a} 
+{\bfseries Entity} ()
+\begin{DoxyCompactList}\small\item\em Default \doxylink{class_entity}{Entity} constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_entity_a65e99028f5eaef4fe924e8fa009b1cde}{Entity}} (int lives\+\_\+ct, sf\+::\+Vector2f pos)
+\item 
+\Hypertarget{class_entity_adf6d3f7cb1b2ba029b6b048a395cc8ae}\label{class_entity_adf6d3f7cb1b2ba029b6b048a395cc8ae} 
+virtual {\bfseries \texorpdfstring{$\sim$}{\string~}\+Entity} ()
+\begin{DoxyCompactList}\small\item\em \doxylink{class_entity}{Entity} destructor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_entity_a6a50dadd36f7ad95c8b465b60644c4db}{set\+Texture}} (std\+::string path)
+\item 
+void \mbox{\hyperlink{class_entity_ad26d4be44d120852c83305883c51650a}{load\+Sprites\+From\+Sheet}} (int sprite\+Width, int sprite\+Height, int num\+Rows, int num\+Columns)
+\item 
+void \mbox{\hyperlink{class_entity_a2c2643b85cfa98766af34fc1ec30fa6e}{set\+Sprite}} (int num\+\_\+of\+\_\+sprite, sf\+::\+Vector2f pos)
+\item 
+void \mbox{\hyperlink{class_entity_a2d7f305a9642fecc73e85f77107c37c3}{Draw}} (sf\+::\+Render\+Window \&target)
+\item 
+\Hypertarget{class_entity_abb6fdcae89cf9a82a1d857184a0485c0}\label{class_entity_abb6fdcae89cf9a82a1d857184a0485c0} 
+void {\bfseries Animation} ()
+\begin{DoxyCompactList}\small\item\em Runs entity\textquotesingle{}s animation. \end{DoxyCompactList}\item 
+\Hypertarget{class_entity_ae1a13285bc02726b857fd4e2e62657a2}\label{class_entity_ae1a13285bc02726b857fd4e2e62657a2} 
+sf\+::\+Vector2f \& {\bfseries get\+Pos} ()
+\begin{DoxyCompactList}\small\item\em Getter used for getting position. \end{DoxyCompactList}\item 
+\Hypertarget{class_entity_a8a1c0c8cf70d898ca91d1585f60f59e2}\label{class_entity_a8a1c0c8cf70d898ca91d1585f60f59e2} 
+sf\+::\+Vector2f {\bfseries get\+Center} ()
+\begin{DoxyCompactList}\small\item\em Getter used for getting center of the entity. \end{DoxyCompactList}\item 
+\Hypertarget{class_entity_a2f33265575ef9bb7c4dcc09fb0bb997f}\label{class_entity_a2f33265575ef9bb7c4dcc09fb0bb997f} 
+sf\+::\+Sprite \& {\bfseries get\+Sprite} ()
+\begin{DoxyCompactList}\small\item\em Getter used for getting entity\textquotesingle{}s current sprite. \end{DoxyCompactList}\item 
+\Hypertarget{class_entity_a22e3d77a345275395a96056f9d6ec2c8}\label{class_entity_a22e3d77a345275395a96056f9d6ec2c8} 
+int \& {\bfseries get\+Lives} ()
+\begin{DoxyCompactList}\small\item\em Getter used for getting lives count. \end{DoxyCompactList}\item 
+\Hypertarget{class_entity_a81c19d3b5dba5aa8f1dc2f4ff8491ac0}\label{class_entity_a81c19d3b5dba5aa8f1dc2f4ff8491ac0} 
+void {\bfseries lives\+Decr} ()
+\begin{DoxyCompactList}\small\item\em Decrements lives count. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_entity_aa4c7fc6e9c9b30a194e9db6227f1b60c}{set\+Pos}} (sf\+::\+Vector2f pos)
+\item 
+void \mbox{\hyperlink{class_entity_ad03e94f741c3f68fefab35340f70ff35}{set\+Animation\+Frequency}} (int freq)
+\item 
+\Hypertarget{class_entity_ab41c831b4e3ef9a955ce390ac0cac664}\label{class_entity_ab41c831b4e3ef9a955ce390ac0cac664} 
+void {\bfseries update\+Health\+Bar} ()
+\begin{DoxyCompactList}\small\item\em Refreshes healthbar, based on current lives count \+: max lives count ratio. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\doxylink{class_entity}{Entity} is an abstract class which defines basic attributes and methods for players, npcs and more
+
+E.\+g. in this program it is used for \doxylink{class_player}{Player}, \doxylink{class_zombie}{Zombie} and bullet 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_entity_a65e99028f5eaef4fe924e8fa009b1cde}\label{class_entity_a65e99028f5eaef4fe924e8fa009b1cde} 
+\index{Entity@{Entity}!Entity@{Entity}}
+\index{Entity@{Entity}!Entity@{Entity}}
+\doxysubsubsection{\texorpdfstring{Entity()}{Entity()}}
+{\footnotesize\ttfamily Entity\+::\+Entity (\begin{DoxyParamCaption}\item[{int}]{lives\+\_\+ct,  }\item[{sf\+::\+Vector2f}]{pos }\end{DoxyParamCaption})}
+
+\doxylink{class_entity}{Entity} multi-\/argument constructor
+
+Used for setting starting values 
+\begin{DoxyParams}{Parameters}
+{\em lives\+\_\+ct} & Indicates how many lives an entity should start with \\
+\hline
+{\em pos} & Indicates what starting postition should an entity have \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_entity_a2d7f305a9642fecc73e85f77107c37c3}\label{class_entity_a2d7f305a9642fecc73e85f77107c37c3} 
+\index{Entity@{Entity}!Draw@{Draw}}
+\index{Draw@{Draw}!Entity@{Entity}}
+\doxysubsubsection{\texorpdfstring{Draw()}{Draw()}}
+{\footnotesize\ttfamily void Entity\+::\+Draw (\begin{DoxyParamCaption}\item[{sf\+::\+Render\+Window \&}]{target }\end{DoxyParamCaption})}
+
+Draws entity\textquotesingle{}s sprite to a target window
+
+
+\begin{DoxyParams}{Parameters}
+{\em target} & Target window \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_entity_ad26d4be44d120852c83305883c51650a}\label{class_entity_ad26d4be44d120852c83305883c51650a} 
+\index{Entity@{Entity}!loadSpritesFromSheet@{loadSpritesFromSheet}}
+\index{loadSpritesFromSheet@{loadSpritesFromSheet}!Entity@{Entity}}
+\doxysubsubsection{\texorpdfstring{loadSpritesFromSheet()}{loadSpritesFromSheet()}}
+{\footnotesize\ttfamily void Entity\+::load\+Sprites\+From\+Sheet (\begin{DoxyParamCaption}\item[{int}]{sprite\+Width,  }\item[{int}]{sprite\+Height,  }\item[{int}]{num\+Rows,  }\item[{int}]{num\+Columns }\end{DoxyParamCaption})}
+
+Loads sprites from sheet and stores them in the vector
+
+Sprites are loaded from a png file which consists of all the needed entity sprites 
+\begin{DoxyParams}{Parameters}
+{\em sprite\+Width} & Width of one sprite (in pixels) \\
+\hline
+{\em sprite\+Height} & Height of the whole png \\
+\hline
+{\em num\+Rows} & Number of rows \\
+\hline
+{\em num\+Columns} & Number of columns \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_entity_ad03e94f741c3f68fefab35340f70ff35}\label{class_entity_ad03e94f741c3f68fefab35340f70ff35} 
+\index{Entity@{Entity}!setAnimationFrequency@{setAnimationFrequency}}
+\index{setAnimationFrequency@{setAnimationFrequency}!Entity@{Entity}}
+\doxysubsubsection{\texorpdfstring{setAnimationFrequency()}{setAnimationFrequency()}}
+{\footnotesize\ttfamily void Entity\+::set\+Animation\+Frequency (\begin{DoxyParamCaption}\item[{int}]{freq }\end{DoxyParamCaption})}
+
+Setter used for setting animation frequency
+
+
+\begin{DoxyParams}{Parameters}
+{\em freq} & Frequency of sprites switches \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_entity_aa4c7fc6e9c9b30a194e9db6227f1b60c}\label{class_entity_aa4c7fc6e9c9b30a194e9db6227f1b60c} 
+\index{Entity@{Entity}!setPos@{setPos}}
+\index{setPos@{setPos}!Entity@{Entity}}
+\doxysubsubsection{\texorpdfstring{setPos()}{setPos()}}
+{\footnotesize\ttfamily void Entity\+::set\+Pos (\begin{DoxyParamCaption}\item[{sf\+::\+Vector2f}]{pos }\end{DoxyParamCaption})}
+
+Sets position to a new one
+
+
+\begin{DoxyParams}{Parameters}
+{\em pos} & New position \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_entity_a2c2643b85cfa98766af34fc1ec30fa6e}\label{class_entity_a2c2643b85cfa98766af34fc1ec30fa6e} 
+\index{Entity@{Entity}!setSprite@{setSprite}}
+\index{setSprite@{setSprite}!Entity@{Entity}}
+\doxysubsubsection{\texorpdfstring{setSprite()}{setSprite()}}
+{\footnotesize\ttfamily void Entity\+::set\+Sprite (\begin{DoxyParamCaption}\item[{int}]{num\+\_\+of\+\_\+sprite,  }\item[{sf\+::\+Vector2f}]{pos }\end{DoxyParamCaption})}
+
+Used for setting a sprite and position
+
+
+\begin{DoxyParams}{Parameters}
+{\em num\+\_\+of\+\_\+sprite} & Index of wanted sprite \\
+\hline
+{\em pos} & Wanted position \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_entity_a6a50dadd36f7ad95c8b465b60644c4db}\label{class_entity_a6a50dadd36f7ad95c8b465b60644c4db} 
+\index{Entity@{Entity}!setTexture@{setTexture}}
+\index{setTexture@{setTexture}!Entity@{Entity}}
+\doxysubsubsection{\texorpdfstring{setTexture()}{setTexture()}}
+{\footnotesize\ttfamily void Entity\+::set\+Texture (\begin{DoxyParamCaption}\item[{std\+::string}]{path }\end{DoxyParamCaption})}
+
+Setter used for setting texture attribute value
+
+
+\begin{DoxyParams}{Parameters}
+{\em path} & Path of an input file \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Entity.\+h\item 
+Entity.\+cpp\end{DoxyCompactItemize}

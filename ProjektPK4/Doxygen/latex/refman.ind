@@ -1,0 +1,163 @@
+\begin{theindex}
+
+  \item {Bullet}, \hyperpage{7}
+    \subitem {Bullet}, \hyperpage{8}
+    \subitem {resetPos}, \hyperpage{9}
+  \item {Bullet.h}, \hyperpage{31}
+
+  \indexspace
+
+  \item {changeCurrAmmo}
+    \subitem {HUD}, \hyperpage{18}
+  \item {changeIsShootingValue}
+    \subitem {Player}, \hyperpage{25}
+  \item {changeMaxAmmo}
+    \subitem {HUD}, \hyperpage{19}
+
+  \indexspace
+
+  \item {DeathScreen}, \hyperpage{9}
+    \subitem {DeathScreen}, \hyperpage{10}
+    \subitem {moveDown}, \hyperpage{10}
+    \subitem {set2PlayerValues}, \hyperpage{10}
+    \subitem {setValues}, \hyperpage{11}
+  \item {DeathScreen.h}, \hyperpage{31}
+  \item {Draw}
+    \subitem {Entity}, \hyperpage{13}
+    \subitem {Player}, \hyperpage{25}
+  \item {draw}
+    \subitem {Menu}, \hyperpage{21}
+  \item {drawHUD}
+    \subitem {HUD}, \hyperpage{19}
+  \item {drawPNHPairs}
+    \subitem {Game}, \hyperpage{15}
+
+  \indexspace
+
+  \item {Entity}, \hyperpage{11}
+    \subitem {Draw}, \hyperpage{13}
+    \subitem {Entity}, \hyperpage{12}
+    \subitem {loadSpritesFromSheet}, \hyperpage{13}
+    \subitem {setAnimationFrequency}, \hyperpage{13}
+    \subitem {setPos}, \hyperpage{13}
+    \subitem {setSprite}, \hyperpage{14}
+    \subitem {setTexture}, \hyperpage{14}
+  \item {Entity.h}, \hyperpage{31}
+
+  \indexspace
+
+  \item {Functions.h}, \hyperpage{32}
+
+  \indexspace
+
+  \item {Game}, \hyperpage{14}
+    \subitem {drawPNHPairs}, \hyperpage{15}
+    \subitem {loadPairsFromFile}, \hyperpage{15}
+    \subitem {processEvents}, \hyperpage{15}
+    \subitem {Update}, \hyperpage{16}
+    \subitem {zombieHandling}, \hyperpage{17}
+    \subitem {zombieHandling\_2Player}, \hyperpage{17}
+  \item {Game.h}, \hyperpage{32}
+
+  \indexspace
+
+  \item {HUD}, \hyperpage{17}
+    \subitem {changeCurrAmmo}, \hyperpage{18}
+    \subitem {changeMaxAmmo}, \hyperpage{19}
+    \subitem {drawHUD}, \hyperpage{19}
+    \subitem {HUD}, \hyperpage{18}
+    \subitem {setHUDfor2ndPlayer}, \hyperpage{19}
+    \subitem {updateScore}, \hyperpage{19}
+  \item {HUD.h}, \hyperpage{33}
+
+  \indexspace
+
+  \item {loadPairsFromFile}
+    \subitem {Game}, \hyperpage{15}
+  \item {loadSpritesFromSheet}
+    \subitem {Entity}, \hyperpage{13}
+
+  \indexspace
+
+  \item {Menu}, \hyperpage{20}
+    \subitem {draw}, \hyperpage{21}
+    \subitem {Menu}, \hyperpage{21}
+    \subitem {moveDown}, \hyperpage{21}
+    \subitem {moveUp}, \hyperpage{21}
+  \item {Menu.h}, \hyperpage{34}
+  \item {moveDown}
+    \subitem {DeathScreen}, \hyperpage{10}
+    \subitem {Menu}, \hyperpage{21}
+  \item {moveUp}
+    \subitem {Menu}, \hyperpage{21}
+
+  \indexspace
+
+  \item {Player}, \hyperpage{23}
+    \subitem {changeIsShootingValue}, \hyperpage{25}
+    \subitem {Draw}, \hyperpage{25}
+    \subitem {Player}, \hyperpage{24}
+    \subitem {player1Movement}, \hyperpage{25}
+    \subitem {player2Movement}, \hyperpage{25}
+    \subitem {playerReload}, \hyperpage{25}
+    \subitem {reloadAnimation}, \hyperpage{26}
+    \subitem {shootingAnimation}, \hyperpage{26}
+    \subitem {shootPistol}, \hyperpage{26}
+  \item {Player.h}, \hyperpage{34}
+  \item {player1Movement}
+    \subitem {Player}, \hyperpage{25}
+  \item {player2Movement}
+    \subitem {Player}, \hyperpage{25}
+  \item {playerReload}
+    \subitem {Player}, \hyperpage{25}
+  \item {processEvents}
+    \subitem {Game}, \hyperpage{15}
+
+  \indexspace
+
+  \item {reloadAnimation}
+    \subitem {Player}, \hyperpage{26}
+  \item {resetPos}
+    \subitem {Bullet}, \hyperpage{9}
+  \item {resource.h}, \hyperpage{35}
+  \item {resource1.h}, \hyperpage{35}
+
+  \indexspace
+
+  \item {set2PlayerValues}
+    \subitem {DeathScreen}, \hyperpage{10}
+  \item {setAnimationFrequency}
+    \subitem {Entity}, \hyperpage{13}
+  \item {setHUDfor2ndPlayer}
+    \subitem {HUD}, \hyperpage{19}
+  \item {setPos}
+    \subitem {Entity}, \hyperpage{13}
+  \item {setSprite}
+    \subitem {Entity}, \hyperpage{14}
+  \item {setTexture}
+    \subitem {Entity}, \hyperpage{14}
+  \item {setValues}
+    \subitem {DeathScreen}, \hyperpage{11}
+  \item {shootingAnimation}
+    \subitem {Player}, \hyperpage{26}
+  \item {shootPistol}
+    \subitem {Player}, \hyperpage{26}
+
+  \indexspace
+
+  \item {Update}
+    \subitem {Game}, \hyperpage{16}
+  \item {updateScore}
+    \subitem {HUD}, \hyperpage{19}
+
+  \indexspace
+
+  \item {Zombie}, \hyperpage{27}
+    \subitem {Zombie}, \hyperpage{28}
+  \item {Zombie.h}, \hyperpage{35}
+  \item {zombieHandling}
+    \subitem {Game}, \hyperpage{17}
+  \item {zombieHandling\_2Player}
+    \subitem {Game}, \hyperpage{17}
+
+\end{theindex}

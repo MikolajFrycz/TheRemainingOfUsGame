@@ -1,0 +1,35 @@
+\doxysection{Menu.\+h}
+\hypertarget{_menu_8h_source}{}\label{_menu_8h_source}\index{Menu.h@{Menu.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#include\ "{}Entity.h"{}}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00005\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_menu}{Menu}}}
+\DoxyCodeLine{00006\ \{}
+\DoxyCodeLine{00007\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00009\ \ \ \ \ \textcolor{keywordtype}{int}\ keytime;}
+\DoxyCodeLine{00011\ \ \ \ \ std::string\ font\_path;}
+\DoxyCodeLine{00013\ \ \ \ \ \textcolor{keywordtype}{int}\ selected\_item\_index\ =\ 0;}
+\DoxyCodeLine{00015\ \ \ \ \ sf::Font\ font;}
+\DoxyCodeLine{00017\ \ \ \ \ sf::Text\ menu[5];}
+\DoxyCodeLine{00019\ \ \ \ \ sf::Texture\ texture;}
+\DoxyCodeLine{00021\ \ \ \ \ sf::Sprite\ background;}
+\DoxyCodeLine{00022\ \ \ \ \ }
+\DoxyCodeLine{00023\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00029\ \ \ \ \ \mbox{\hyperlink{class_menu}{Menu}}(\textcolor{keywordtype}{int}\ k\_time,\ std::string\ f\_path,\ std::filesystem::path\ backgrd\_path);}
+\DoxyCodeLine{00031\ \ \ \ \ \mbox{\hyperlink{class_menu_a831387f51358cfb88cd018e1777bc980}{\string~Menu}}();}
+\DoxyCodeLine{00036\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_menu_a1443dcfd1c1c9844c40658d752c1fbab}{draw}}(sf::RenderWindow\&\ window);}
+\DoxyCodeLine{00038\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_menu_a8951110fff78c7d5fee30c007e2a75cc}{setValues}}();}
+\DoxyCodeLine{00042\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_menu_a9686e8857d17d1d8411765f3482066f9}{moveUp}}(\textcolor{keywordtype}{int}\ min\_opt);}
+\DoxyCodeLine{00044\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_menu_abbec620bd41608fba287400ead4467aa}{moveDown}}();}
+\DoxyCodeLine{00046\ \ \ \ \ \textcolor{keywordtype}{int}\ \&\mbox{\hyperlink{class_menu_a0e5711a7a0ba41fc0925c39dd89a8fe2}{getKeytime}}();}
+\DoxyCodeLine{00048\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_menu_ae95427a48d11b8d74d16a0fcf34f2c8e}{getSelectedItem}}();}
+\DoxyCodeLine{00050\ \ \ \ \ sf::Font\ \&\mbox{\hyperlink{class_menu_a6c4ce864a3c4d70254afd05a073732af}{getFont}}();}
+\DoxyCodeLine{00052\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_menu_a08c091b63834036d5c024481b133226e}{setText}}(\textcolor{keywordtype}{int}\ i,\ sf::Text\ text);}
+\DoxyCodeLine{00054\ \ \ \ \ sf::Sprite\ \&\mbox{\hyperlink{class_menu_a4f9ef99e2b3a7fa11b5774dc8a2c9e91}{getBackground}}();}
+\DoxyCodeLine{00056\ \ \ \ \ \textcolor{keywordtype}{int}\ \&\mbox{\hyperlink{class_menu_a55bca2b64625a485c30613bc5b597f3b}{getSelectedItemIndex}}();}
+\DoxyCodeLine{00058\ \ \ \ \ sf::Text\&\ \mbox{\hyperlink{class_menu_a675b2242d8f511276efa6ed164568bea}{getMenuText}}(\textcolor{keywordtype}{int}\ i);}
+\DoxyCodeLine{00059\ \};}
+
+\end{DoxyCode}

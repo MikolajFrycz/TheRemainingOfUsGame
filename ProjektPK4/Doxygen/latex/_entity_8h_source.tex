@@ -1,0 +1,49 @@
+\doxysection{Entity.\+h}
+\hypertarget{_entity_8h_source}{}\label{_entity_8h_source}\index{Entity.h@{Entity.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ <SFML/Graphics.hpp>}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <chrono>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ <random>}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ <filesystem>}}
+\DoxyCodeLine{00009\ }
+\DoxyCodeLine{00013\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_entity}{Entity}}}
+\DoxyCodeLine{00014\ \{}
+\DoxyCodeLine{00015\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00017\ \ \ \ \ \textcolor{keywordtype}{int}\ lives;}
+\DoxyCodeLine{00019\ \ \ \ \ \textcolor{keywordtype}{int}\ max\_lives;}
+\DoxyCodeLine{00021\ \ \ \ \ \textcolor{keywordtype}{int}\ spriteCount\ =\ 0;}
+\DoxyCodeLine{00023\ \ \ \ \ sf::Texture\ texture;}
+\DoxyCodeLine{00025\ \ \ \ \ sf::Sprite\ sprite;}
+\DoxyCodeLine{00027\ \ \ \ \ std::vector<sf::Sprite>\ spriteVector;}
+\DoxyCodeLine{00029\ \ \ \ \ sf::Vector2f\ position;}
+\DoxyCodeLine{00031\ \ \ \ \ sf::Clock\ animation\_clock;}
+\DoxyCodeLine{00033\ \ \ \ \ \textcolor{keywordtype}{int}\ currSprite\ =\ 0;}
+\DoxyCodeLine{00035\ \ \ \ \ \textcolor{keywordtype}{int}\ freq\_of\_animation\_switch\ =\ 0;}
+\DoxyCodeLine{00037\ \ \ \ \ sf::RectangleShape\ health\_bar;}
+\DoxyCodeLine{00039\ \ \ \ \ \textcolor{keywordtype}{float}\ health\_bar\_offset;}
+\DoxyCodeLine{00040\ }
+\DoxyCodeLine{00041\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00043\ \ \ \ \ \mbox{\hyperlink{class_entity_a980f368aa07ce358583982821533a54a}{Entity}}();}
+\DoxyCodeLine{00049\ \ \ \ \ \mbox{\hyperlink{class_entity_a980f368aa07ce358583982821533a54a}{Entity}}(\textcolor{keywordtype}{int}\ lives\_ct,\ sf::Vector2f\ pos);}
+\DoxyCodeLine{00051\ \ \ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{class_entity_adf6d3f7cb1b2ba029b6b048a395cc8ae}{\string~Entity}}();}
+\DoxyCodeLine{00055\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_entity_a6a50dadd36f7ad95c8b465b60644c4db}{setTexture}}(std::string\ path);}
+\DoxyCodeLine{00063\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_entity_ad26d4be44d120852c83305883c51650a}{loadSpritesFromSheet}}(\textcolor{keywordtype}{int}\ spriteWidth,\ \textcolor{keywordtype}{int}\ spriteHeight,\ \textcolor{keywordtype}{int}\ numRows,\ \textcolor{keywordtype}{int}\ numColumns);}
+\DoxyCodeLine{00068\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_entity_a2c2643b85cfa98766af34fc1ec30fa6e}{setSprite}}(\textcolor{keywordtype}{int}\ num\_of\_sprite,\ sf::Vector2f\ pos);}
+\DoxyCodeLine{00072\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_entity_a2d7f305a9642fecc73e85f77107c37c3}{Draw}}(sf::RenderWindow\&\ target);}
+\DoxyCodeLine{00074\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_entity_abb6fdcae89cf9a82a1d857184a0485c0}{Animation}}();}
+\DoxyCodeLine{00076\ \ \ \ \ sf::Vector2f\&\ \mbox{\hyperlink{class_entity_ae1a13285bc02726b857fd4e2e62657a2}{getPos}}();}
+\DoxyCodeLine{00078\ \ \ \ \ sf::Vector2f\ \mbox{\hyperlink{class_entity_a8a1c0c8cf70d898ca91d1585f60f59e2}{getCenter}}();}
+\DoxyCodeLine{00080\ \ \ \ \ sf::Sprite\&\ \mbox{\hyperlink{class_entity_a2f33265575ef9bb7c4dcc09fb0bb997f}{getSprite}}();}
+\DoxyCodeLine{00082\ \ \ \ \ \textcolor{keywordtype}{int}\ \&\mbox{\hyperlink{class_entity_a22e3d77a345275395a96056f9d6ec2c8}{getLives}}();}
+\DoxyCodeLine{00084\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_entity_a81c19d3b5dba5aa8f1dc2f4ff8491ac0}{livesDecr}}();}
+\DoxyCodeLine{00088\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_entity_aa4c7fc6e9c9b30a194e9db6227f1b60c}{setPos}}(sf::Vector2f\ pos);}
+\DoxyCodeLine{00092\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_entity_ad03e94f741c3f68fefab35340f70ff35}{setAnimationFrequency}}(\textcolor{keywordtype}{int}\ freq);}
+\DoxyCodeLine{00094\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_entity_ab41c831b4e3ef9a955ce390ac0cac664}{updateHealthBar}}();}
+\DoxyCodeLine{00095\ \};}
+
+\end{DoxyCode}

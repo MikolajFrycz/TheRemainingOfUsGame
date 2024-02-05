@@ -1,0 +1,119 @@
+\doxysection{Bullet Class Reference}
+\hypertarget{class_bullet}{}\label{class_bullet}\index{Bullet@{Bullet}}
+
+
+{\ttfamily \#include $<$Bullet.\+h$>$}
+
+Inheritance diagram for Bullet\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_bullet}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_bullet_ac0d064dafd0889e726559efb91b00b86}{Bullet}} (sf\+::\+Vector2f pos, sf\+::\+Vector2f size, int sht\+\_\+timer)
+\item 
+\Hypertarget{class_bullet_aaeb5cb41d7db89f49007b08b41f1bfcf}\label{class_bullet_aaeb5cb41d7db89f49007b08b41f1bfcf} 
+{\bfseries \texorpdfstring{$\sim$}{\string~}\+Bullet} ()
+\begin{DoxyCompactList}\small\item\em \doxylink{class_bullet}{Bullet} destructor. \end{DoxyCompactList}\item 
+\Hypertarget{class_bullet_ae51cbdd5ce3a727ebb8a417ac3d780b6}\label{class_bullet_ae51cbdd5ce3a727ebb8a417ac3d780b6} 
+sf\+::\+Rectangle\+Shape {\bfseries get\+Shape} ()
+\begin{DoxyCompactList}\small\item\em Getter used for getting bullet\textquotesingle{}s shape. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_bullet_a1f082daf53183651a8faf0e83b4cfff4}{reset\+Pos}} (sf\+::\+Vector2f pos)
+\item 
+\Hypertarget{class_bullet_a430ff35a665554fbfc59f368eefe75e2}\label{class_bullet_a430ff35a665554fbfc59f368eefe75e2} 
+bool {\bfseries get\+Is\+Shot} ()
+\begin{DoxyCompactList}\small\item\em Getter which returns is\+Shot value. \end{DoxyCompactList}\item 
+\Hypertarget{class_bullet_a1293caa8e4f96b2a367e91152949f825}\label{class_bullet_a1293caa8e4f96b2a367e91152949f825} 
+void {\bfseries is\+Shot\+True} ()
+\begin{DoxyCompactList}\small\item\em Sets is\+Shot value to True. \end{DoxyCompactList}\item 
+\Hypertarget{class_bullet_a7ea3108eeda087154d3857812e513b4d}\label{class_bullet_a7ea3108eeda087154d3857812e513b4d} 
+void {\bfseries is\+Shot\+False} ()
+\begin{DoxyCompactList}\small\item\em Sets is\+Shot value to False. \end{DoxyCompactList}\item 
+\Hypertarget{class_bullet_a1f43e4c63f744cb7009fd6830685ec63}\label{class_bullet_a1f43e4c63f744cb7009fd6830685ec63} 
+int {\bfseries get\+Shot\+Timer} ()
+\begin{DoxyCompactList}\small\item\em Getter which returns shot timer. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_entity}{Entity}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Entity} ()
+\begin{DoxyCompactList}\small\item\em Default \doxylink{class_entity}{Entity} constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_entity_a65e99028f5eaef4fe924e8fa009b1cde}{Entity}} (int lives\+\_\+ct, sf\+::\+Vector2f pos)
+\item 
+virtual {\bfseries \texorpdfstring{$\sim$}{\string~}\+Entity} ()
+\begin{DoxyCompactList}\small\item\em \doxylink{class_entity}{Entity} destructor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_entity_a6a50dadd36f7ad95c8b465b60644c4db}{set\+Texture}} (std\+::string path)
+\item 
+void \mbox{\hyperlink{class_entity_ad26d4be44d120852c83305883c51650a}{load\+Sprites\+From\+Sheet}} (int sprite\+Width, int sprite\+Height, int num\+Rows, int num\+Columns)
+\item 
+void \mbox{\hyperlink{class_entity_a2c2643b85cfa98766af34fc1ec30fa6e}{set\+Sprite}} (int num\+\_\+of\+\_\+sprite, sf\+::\+Vector2f pos)
+\item 
+void \mbox{\hyperlink{class_entity_a2d7f305a9642fecc73e85f77107c37c3}{Draw}} (sf\+::\+Render\+Window \&target)
+\item 
+void {\bfseries Animation} ()
+\begin{DoxyCompactList}\small\item\em Runs entity\textquotesingle{}s animation. \end{DoxyCompactList}\item 
+sf\+::\+Vector2f \& {\bfseries get\+Pos} ()
+\begin{DoxyCompactList}\small\item\em Getter used for getting position. \end{DoxyCompactList}\item 
+sf\+::\+Vector2f {\bfseries get\+Center} ()
+\begin{DoxyCompactList}\small\item\em Getter used for getting center of the entity. \end{DoxyCompactList}\item 
+sf\+::\+Sprite \& {\bfseries get\+Sprite} ()
+\begin{DoxyCompactList}\small\item\em Getter used for getting entity\textquotesingle{}s current sprite. \end{DoxyCompactList}\item 
+int \& {\bfseries get\+Lives} ()
+\begin{DoxyCompactList}\small\item\em Getter used for getting lives count. \end{DoxyCompactList}\item 
+void {\bfseries lives\+Decr} ()
+\begin{DoxyCompactList}\small\item\em Decrements lives count. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_entity_aa4c7fc6e9c9b30a194e9db6227f1b60c}{set\+Pos}} (sf\+::\+Vector2f pos)
+\item 
+void \mbox{\hyperlink{class_entity_ad03e94f741c3f68fefab35340f70ff35}{set\+Animation\+Frequency}} (int freq)
+\item 
+void {\bfseries update\+Health\+Bar} ()
+\begin{DoxyCompactList}\small\item\em Refreshes healthbar, based on current lives count \+: max lives count ratio. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class which defines bullet objects
+
+\doxylink{class_entity}{Entity} is it\textquotesingle{}s parent class 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_bullet_ac0d064dafd0889e726559efb91b00b86}\label{class_bullet_ac0d064dafd0889e726559efb91b00b86} 
+\index{Bullet@{Bullet}!Bullet@{Bullet}}
+\index{Bullet@{Bullet}!Bullet@{Bullet}}
+\doxysubsubsection{\texorpdfstring{Bullet()}{Bullet()}}
+{\footnotesize\ttfamily Bullet\+::\+Bullet (\begin{DoxyParamCaption}\item[{sf\+::\+Vector2f}]{pos,  }\item[{sf\+::\+Vector2f}]{size,  }\item[{int}]{sht\+\_\+timer }\end{DoxyParamCaption})}
+
+\doxylink{class_bullet}{Bullet} multi-\/argument constructor
+
+
+\begin{DoxyParams}{Parameters}
+{\em pos} & \doxylink{class_bullet}{Bullet}\textquotesingle{}s initial position \\
+\hline
+{\em size} & Size of the bullet \\
+\hline
+{\em sht\+\_\+timer} & shoot\+Timer value \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_bullet_a1f082daf53183651a8faf0e83b4cfff4}\label{class_bullet_a1f082daf53183651a8faf0e83b4cfff4} 
+\index{Bullet@{Bullet}!resetPos@{resetPos}}
+\index{resetPos@{resetPos}!Bullet@{Bullet}}
+\doxysubsubsection{\texorpdfstring{resetPos()}{resetPos()}}
+{\footnotesize\ttfamily void Bullet\+::reset\+Pos (\begin{DoxyParamCaption}\item[{sf\+::\+Vector2f}]{pos }\end{DoxyParamCaption})}
+
+Resets position to given value
+
+
+\begin{DoxyParams}{Parameters}
+{\em pos} & New position \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Bullet.\+h\item 
+Bullet.\+cpp\end{DoxyCompactItemize}

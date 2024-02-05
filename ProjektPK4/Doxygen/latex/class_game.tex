@@ -1,0 +1,155 @@
+\doxysection{Game Class Reference}
+\hypertarget{class_game}{}\label{class_game}\index{Game@{Game}}
+
+
+{\ttfamily \#include $<$Game.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_game_ad59df6562a58a614fda24622d3715b65}\label{class_game_ad59df6562a58a614fda24622d3715b65} 
+{\bfseries Game} ()
+\begin{DoxyCompactList}\small\item\em \doxylink{class_game}{Game} default constructor. \end{DoxyCompactList}\item 
+\Hypertarget{class_game_ae3d112ca6e0e55150d2fdbc704474530}\label{class_game_ae3d112ca6e0e55150d2fdbc704474530} 
+{\bfseries \texorpdfstring{$\sim$}{\string~}\+Game} ()
+\begin{DoxyCompactList}\small\item\em \doxylink{class_game}{Game} destructor. \end{DoxyCompactList}\item 
+\Hypertarget{class_game_a1ab78f5ed0d5ea879157357cf2fb2afa}\label{class_game_a1ab78f5ed0d5ea879157357cf2fb2afa} 
+void {\bfseries run} ()
+\begin{DoxyCompactList}\small\item\em Run method is used to play the game in main function. This method is all that\textquotesingle{}s needed for the game to run in main function. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_game_a75dd8a20e9d687496dde6331f71cd576}{Update}} (\mbox{\hyperlink{class_player}{Player}} \&player1, \mbox{\hyperlink{class_player}{Player}} \&player2, \mbox{\hyperlink{class_zombie}{Zombie}} \&basiczombie, \mbox{\hyperlink{class_zombie}{Zombie}} \&strong\+\_\+zombie, \mbox{\hyperlink{class_zombie}{Zombie}} \&fast\+\_\+zombie, \mbox{\hyperlink{class_bullet}{Bullet}} \&bullet, sf\+::\+Clock \&reload\+Clock, sf\+::\+Clock \&reload\+Clock2, \mbox{\hyperlink{class_h_u_d}{HUD}} \&hud, \mbox{\hyperlink{class_h_u_d}{HUD}} \&hud2, \mbox{\hyperlink{class_menu}{Menu}} \&menu, \mbox{\hyperlink{class_death_screen}{Death\+Screen}} \&deathscreen, \mbox{\hyperlink{class_death_screen}{Death\+Screen}} \&duo\+\_\+ds, int \&option)
+\item 
+void \mbox{\hyperlink{class_game_a3912dba4118e9466e14cd1110dc9b3ba}{process\+Events}} (\mbox{\hyperlink{class_zombie}{Zombie}} \&zombie, \mbox{\hyperlink{class_zombie}{Zombie}} \&strong\+\_\+zombie, \mbox{\hyperlink{class_zombie}{Zombie}} \&fast\+\_\+zombie)
+\item 
+void \mbox{\hyperlink{class_game_a6adc08bdab67e962047313788b025f60}{zombie\+Handling}} (\mbox{\hyperlink{class_player}{Player}} \&player1, \mbox{\hyperlink{class_zombie}{Zombie}} \&zombie, \mbox{\hyperlink{class_zombie}{Zombie}} \&strong\+\_\+zombie, \mbox{\hyperlink{class_zombie}{Zombie}} \&fast\+\_\+zombie, \mbox{\hyperlink{class_h_u_d}{HUD}} \&hud)
+\item 
+void \mbox{\hyperlink{class_game_a2d38a97814c1a305c75070117b8c856c}{zombie\+Handling\+\_\+2\+Player}} (\mbox{\hyperlink{class_player}{Player}} \&player1, \mbox{\hyperlink{class_player}{Player}} \&player2, \mbox{\hyperlink{class_zombie}{Zombie}} \&zombie, \mbox{\hyperlink{class_zombie}{Zombie}} \&strong\+\_\+zombie, \mbox{\hyperlink{class_zombie}{Zombie}} \&fast\+\_\+zombie, \mbox{\hyperlink{class_h_u_d}{HUD}} \&hud, \mbox{\hyperlink{class_h_u_d}{HUD}} \&hud2)
+\item 
+void \mbox{\hyperlink{class_game_ab1b865a3b914668a5e1b807c02fd277c}{load\+Pairs\+From\+File}} (std\+::filesystem\+::path path)
+\item 
+void \mbox{\hyperlink{class_game_ae2ab011d27938712258115036e2507c4}{draw\+PNHPairs}} (sf\+::\+Render\+Window \&target\+\_\+window)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This class is responsible for running the game loop
+
+\doxylink{class_game}{Game} class uses all the created classes to process the game and run it using the \doxylink{class_game_a1ab78f5ed0d5ea879157357cf2fb2afa}{run()} method 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_game_ae2ab011d27938712258115036e2507c4}\label{class_game_ae2ab011d27938712258115036e2507c4} 
+\index{Game@{Game}!drawPNHPairs@{drawPNHPairs}}
+\index{drawPNHPairs@{drawPNHPairs}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{drawPNHPairs()}{drawPNHPairs()}}
+{\footnotesize\ttfamily void Game\+::draw\+PNHPairs (\begin{DoxyParamCaption}\item[{sf\+::\+Render\+Window \&}]{target\+\_\+window }\end{DoxyParamCaption})}
+
+This method draw leaderboard file pairs of players and their highscores to a target window
+
+
+\begin{DoxyParams}{Parameters}
+{\em target\+\_\+window} & Window to which pairs are drawn \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_game_ab1b865a3b914668a5e1b807c02fd277c}\label{class_game_ab1b865a3b914668a5e1b807c02fd277c} 
+\index{Game@{Game}!loadPairsFromFile@{loadPairsFromFile}}
+\index{loadPairsFromFile@{loadPairsFromFile}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{loadPairsFromFile()}{loadPairsFromFile()}}
+{\footnotesize\ttfamily void Game\+::load\+Pairs\+From\+File (\begin{DoxyParamCaption}\item[{std\+::filesystem\+::path}]{path }\end{DoxyParamCaption})}
+
+This method is used for loading player\+\_\+n\+\_\+highscore pairs from a leaderboard file
+
+
+\begin{DoxyParams}{Parameters}
+{\em path} & Path parameter containing input file\textquotesingle{}s location \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_game_a3912dba4118e9466e14cd1110dc9b3ba}\label{class_game_a3912dba4118e9466e14cd1110dc9b3ba} 
+\index{Game@{Game}!processEvents@{processEvents}}
+\index{processEvents@{processEvents}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{processEvents()}{processEvents()}}
+{\footnotesize\ttfamily void Game\+::process\+Events (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_zombie}{Zombie}} \&}]{zombie,  }\item[{\mbox{\hyperlink{class_zombie}{Zombie}} \&}]{strong\+\_\+zombie,  }\item[{\mbox{\hyperlink{class_zombie}{Zombie}} \&}]{fast\+\_\+zombie }\end{DoxyParamCaption})}
+
+This method is used for processing different events
+
+It processes events like\+: player nickname input or closing the game window with mouse 
+\begin{DoxyParams}{Parameters}
+{\em zombie} & Basic zombie type object. It\textquotesingle{}s resetting methods are needed e.\+g. to reset spawn clocks before the game is initiated \\
+\hline
+{\em strong\+\_\+zombie} & Strong zombie type object. It\textquotesingle{}s resetting methods are needed e.\+g. to reset spawn clocks before the game is initiated \\
+\hline
+{\em fast\+\_\+zombie} & Fast zombie type object. It\textquotesingle{}s resetting methods are needed e.\+g. to reset spawn clocks before the game is initiated \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_game_a75dd8a20e9d687496dde6331f71cd576}\label{class_game_a75dd8a20e9d687496dde6331f71cd576} 
+\index{Game@{Game}!Update@{Update}}
+\index{Update@{Update}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void Game\+::\+Update (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_player}{Player}} \&}]{player1,  }\item[{\mbox{\hyperlink{class_player}{Player}} \&}]{player2,  }\item[{\mbox{\hyperlink{class_zombie}{Zombie}} \&}]{basiczombie,  }\item[{\mbox{\hyperlink{class_zombie}{Zombie}} \&}]{strong\+\_\+zombie,  }\item[{\mbox{\hyperlink{class_zombie}{Zombie}} \&}]{fast\+\_\+zombie,  }\item[{\mbox{\hyperlink{class_bullet}{Bullet}} \&}]{bullet,  }\item[{sf\+::\+Clock \&}]{reload\+Clock,  }\item[{sf\+::\+Clock \&}]{reload\+Clock2,  }\item[{\mbox{\hyperlink{class_h_u_d}{HUD}} \&}]{hud,  }\item[{\mbox{\hyperlink{class_h_u_d}{HUD}} \&}]{hud2,  }\item[{\mbox{\hyperlink{class_menu}{Menu}} \&}]{menu,  }\item[{\mbox{\hyperlink{class_death_screen}{Death\+Screen}} \&}]{deathscreen,  }\item[{\mbox{\hyperlink{class_death_screen}{Death\+Screen}} \&}]{duo\+\_\+ds,  }\item[{int \&}]{option }\end{DoxyParamCaption})}
+
+Update method is used for drawing all the video on screen as well as for the whole game mechanism
+
+Update method draws all the necessary objects in a form of sprites or sf\+::\+Text objects 
+\begin{DoxyParams}{Parameters}
+{\em player1} & \doxylink{class_player}{Player} object used for singleplayer and for \doxylink{class_player}{Player} no 1 in two-\/player mode \\
+\hline
+{\em player2} & \doxylink{class_player}{Player} object used for player no 2 in two-\/player mode \\
+\hline
+{\em basiczombie} & \doxylink{class_zombie}{Zombie} class object used for creating basic-\/type zombies \\
+\hline
+{\em strong\+\_\+zombie} & \doxylink{class_zombie}{Zombie} class object used for creating strong-\/type zombies \\
+\hline
+{\em fast\+\_\+zombie} & \doxylink{class_zombie}{Zombie} class object used for creating fast-\/type zombies \\
+\hline
+{\em bullet} & \doxylink{class_bullet}{Bullet} class object used for creating bullets in game that are later used by \doxylink{class_player}{Player} to shoot \\
+\hline
+{\em reload\+Clock} & Variable used for timed sprite switches during reload animation \\
+\hline
+{\em reload\+Clock2} & The same as reload\+Clock but for second player \\
+\hline
+{\em hud} & \doxylink{class_h_u_d}{HUD} object used for drawing head-\/up display on screen \\
+\hline
+{\em hud2} & The same as hud but for second player (used in two-\/player mode) \\
+\hline
+{\em menu} & Object used for Main \doxylink{class_menu}{Menu} handling in game \\
+\hline
+{\em deathscreen} & Used for displaying game\textquotesingle{}s deathscreen after the player dies \\
+\hline
+{\em duo\+\_\+ds} & Just like deathscreen but for two-\/player mode \\
+\hline
+{\em option} & Used for defining which case is used, adequate to the \doxylink{class_game}{Game} class opt attribute \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_game_a6adc08bdab67e962047313788b025f60}\label{class_game_a6adc08bdab67e962047313788b025f60} 
+\index{Game@{Game}!zombieHandling@{zombieHandling}}
+\index{zombieHandling@{zombieHandling}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{zombieHandling()}{zombieHandling()}}
+{\footnotesize\ttfamily void Game\+::zombie\+Handling (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_player}{Player}} \&}]{player1,  }\item[{\mbox{\hyperlink{class_zombie}{Zombie}} \&}]{zombie,  }\item[{\mbox{\hyperlink{class_zombie}{Zombie}} \&}]{strong\+\_\+zombie,  }\item[{\mbox{\hyperlink{class_zombie}{Zombie}} \&}]{fast\+\_\+zombie,  }\item[{\mbox{\hyperlink{class_h_u_d}{HUD}} \&}]{hud }\end{DoxyParamCaption})}
+
+Method used for spawning zombies
+
+Its used for handling zombies\textquotesingle{} behaviour (spawning, collisions etc.) + some other aspects like updating hud\textquotesingle{}s score count when a zombie is killed 
+\begin{DoxyParams}{Parameters}
+{\em player1} & \doxylink{class_player}{Player} class object used to decrease health when zombie touches the bottom \\
+\hline
+{\em zombie} & \doxylink{class_zombie}{Zombie} class object for basic-\/type zombies \\
+\hline
+{\em strong\+\_\+zombie} & \doxylink{class_zombie}{Zombie} class object for strong-\/type zombies \\
+\hline
+{\em fast\+\_\+zombie} & \doxylink{class_zombie}{Zombie} class object for fast-\/type zombies \\
+\hline
+{\em hud} & \doxylink{class_h_u_d}{HUD} object needed for updating \doxylink{class_h_u_d}{HUD}. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_game_a2d38a97814c1a305c75070117b8c856c}\label{class_game_a2d38a97814c1a305c75070117b8c856c} 
+\index{Game@{Game}!zombieHandling\_2Player@{zombieHandling\_2Player}}
+\index{zombieHandling\_2Player@{zombieHandling\_2Player}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{zombieHandling\_2Player()}{zombieHandling\_2Player()}}
+{\footnotesize\ttfamily void Game\+::zombie\+Handling\+\_\+2\+Player (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_player}{Player}} \&}]{player1,  }\item[{\mbox{\hyperlink{class_player}{Player}} \&}]{player2,  }\item[{\mbox{\hyperlink{class_zombie}{Zombie}} \&}]{zombie,  }\item[{\mbox{\hyperlink{class_zombie}{Zombie}} \&}]{strong\+\_\+zombie,  }\item[{\mbox{\hyperlink{class_zombie}{Zombie}} \&}]{fast\+\_\+zombie,  }\item[{\mbox{\hyperlink{class_h_u_d}{HUD}} \&}]{hud,  }\item[{\mbox{\hyperlink{class_h_u_d}{HUD}} \&}]{hud2 }\end{DoxyParamCaption})}
+
+Slightly altered version of zombie\+Handling method
+
+It also needs second player\textquotesingle{}s object and second hud to work in two-\/player mode 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Game.\+h\item 
+Game.\+cpp\end{DoxyCompactItemize}

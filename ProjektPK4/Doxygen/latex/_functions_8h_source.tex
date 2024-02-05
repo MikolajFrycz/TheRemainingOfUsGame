@@ -1,0 +1,23 @@
+\doxysection{Functions.\+h}
+\hypertarget{_functions_8h_source}{}\label{_functions_8h_source}\index{Functions.h@{Functions.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#include\ "{}SFML\(\backslash\)Audio.hpp"{}}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ <filesystem>}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <ranges>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <fstream>}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ "{}Zombie.h"{}}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ <future>}}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00014\ std::vector<std::string>\ readLinesFromFile(\textcolor{keyword}{const}\ std::string\&\ filename);}
+\DoxyCodeLine{00015\ }
+\DoxyCodeLine{00021\ \textcolor{keywordtype}{void}\ updateLeaderboardFile(std::filesystem::path\ leaderboard\_path,\ std::string\ player\_nick,\ \textcolor{keywordtype}{int}\ score);}
+\DoxyCodeLine{00022\ }
+\DoxyCodeLine{00029\ \textcolor{keywordtype}{void}\ increaseDifficulty(\mbox{\hyperlink{class_zombie}{Zombie}}\&\ zombie,\ \mbox{\hyperlink{class_zombie}{Zombie}}\&\ strong\_zombie,\ \mbox{\hyperlink{class_h_u_d}{HUD}}\&\ hud);}
+\DoxyCodeLine{00030\ }
+\DoxyCodeLine{00035\ \textcolor{keywordtype}{void}\ loadAudioPromise(std::promise<sf::SoundBuffer>\ promise,\ std::string\ file\_path);}
+
+\end{DoxyCode}

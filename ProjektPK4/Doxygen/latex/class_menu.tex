@@ -1,0 +1,127 @@
+\doxysection{Menu Class Reference}
+\hypertarget{class_menu}{}\label{class_menu}\index{Menu@{Menu}}
+
+
+This class dictates the behaviour of main menu.  
+
+
+
+
+{\ttfamily \#include $<$Menu.\+h$>$}
+
+Inheritance diagram for Menu\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_menu}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_menu_a2a68482b07fffe312b800a4407b6ccc2}{Menu}} (int k\+\_\+time, std\+::string f\+\_\+path, std\+::filesystem\+::path backgrd\+\_\+path)
+\item 
+\Hypertarget{class_menu_a831387f51358cfb88cd018e1777bc980}\label{class_menu_a831387f51358cfb88cd018e1777bc980} 
+{\bfseries \texorpdfstring{$\sim$}{\string~}\+Menu} ()
+\begin{DoxyCompactList}\small\item\em \doxylink{class_menu}{Menu} destructor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_menu_a1443dcfd1c1c9844c40658d752c1fbab}{draw}} (sf\+::\+Render\+Window \&window)
+\item 
+\Hypertarget{class_menu_a8951110fff78c7d5fee30c007e2a75cc}\label{class_menu_a8951110fff78c7d5fee30c007e2a75cc} 
+virtual void {\bfseries set\+Values} ()
+\begin{DoxyCompactList}\small\item\em Initiates menu\textquotesingle{}s values. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_menu_a9686e8857d17d1d8411765f3482066f9}{move\+Up}} (int min\+\_\+opt)
+\item 
+virtual void \mbox{\hyperlink{class_menu_abbec620bd41608fba287400ead4467aa}{move\+Down}} ()
+\begin{DoxyCompactList}\small\item\em Used to switch to lower option. \end{DoxyCompactList}\item 
+\Hypertarget{class_menu_a0e5711a7a0ba41fc0925c39dd89a8fe2}\label{class_menu_a0e5711a7a0ba41fc0925c39dd89a8fe2} 
+int \& {\bfseries get\+Keytime} ()
+\begin{DoxyCompactList}\small\item\em Getter which returns keytime. \end{DoxyCompactList}\item 
+\Hypertarget{class_menu_ae95427a48d11b8d74d16a0fcf34f2c8e}\label{class_menu_ae95427a48d11b8d74d16a0fcf34f2c8e} 
+int {\bfseries get\+Selected\+Item} ()
+\begin{DoxyCompactList}\small\item\em Getter which returns selected item. \end{DoxyCompactList}\item 
+\Hypertarget{class_menu_a6c4ce864a3c4d70254afd05a073732af}\label{class_menu_a6c4ce864a3c4d70254afd05a073732af} 
+sf\+::\+Font \& {\bfseries get\+Font} ()
+\begin{DoxyCompactList}\small\item\em Getter which returns Font. \end{DoxyCompactList}\item 
+\Hypertarget{class_menu_a08c091b63834036d5c024481b133226e}\label{class_menu_a08c091b63834036d5c024481b133226e} 
+void {\bfseries set\+Text} (int i, sf\+::\+Text text)
+\begin{DoxyCompactList}\small\item\em Setter which sets text value to the adequate Text by its index i. \end{DoxyCompactList}\item 
+\Hypertarget{class_menu_a4f9ef99e2b3a7fa11b5774dc8a2c9e91}\label{class_menu_a4f9ef99e2b3a7fa11b5774dc8a2c9e91} 
+sf\+::\+Sprite \& {\bfseries get\+Background} ()
+\begin{DoxyCompactList}\small\item\em Getter which returns background sprite. \end{DoxyCompactList}\item 
+\Hypertarget{class_menu_a55bca2b64625a485c30613bc5b597f3b}\label{class_menu_a55bca2b64625a485c30613bc5b597f3b} 
+int \& {\bfseries get\+Selected\+Item\+Index} ()
+\begin{DoxyCompactList}\small\item\em Getter which returns selected item index. \end{DoxyCompactList}\item 
+\Hypertarget{class_menu_a675b2242d8f511276efa6ed164568bea}\label{class_menu_a675b2242d8f511276efa6ed164568bea} 
+sf\+::\+Text \& {\bfseries get\+Menu\+Text} (int i)
+\begin{DoxyCompactList}\small\item\em Getter which returns option\textquotesingle{}s text by it\textquotesingle{}s id i. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This class dictates the behaviour of main menu. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_menu_a2a68482b07fffe312b800a4407b6ccc2}\label{class_menu_a2a68482b07fffe312b800a4407b6ccc2} 
+\index{Menu@{Menu}!Menu@{Menu}}
+\index{Menu@{Menu}!Menu@{Menu}}
+\doxysubsubsection{\texorpdfstring{Menu()}{Menu()}}
+{\footnotesize\ttfamily Menu\+::\+Menu (\begin{DoxyParamCaption}\item[{int}]{k\+\_\+time,  }\item[{std\+::string}]{f\+\_\+path,  }\item[{std\+::filesystem\+::path}]{backgrd\+\_\+path }\end{DoxyParamCaption})}
+
+\doxylink{class_menu}{Menu} multi-\/argument constructor
+
+
+\begin{DoxyParams}{Parameters}
+{\em k\+\_\+time} & Sets key time value \\
+\hline
+{\em f\+\_\+path} & Font file directory \\
+\hline
+{\em backgrd\+\_\+path} & Directory of background png \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_menu_a1443dcfd1c1c9844c40658d752c1fbab}\label{class_menu_a1443dcfd1c1c9844c40658d752c1fbab} 
+\index{Menu@{Menu}!draw@{draw}}
+\index{draw@{draw}!Menu@{Menu}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily void Menu\+::draw (\begin{DoxyParamCaption}\item[{sf\+::\+Render\+Window \&}]{window }\end{DoxyParamCaption})}
+
+This method draws the menu on screen
+
+It is used to draw all the sf\+::\+Text variables 
+\begin{DoxyParams}{Parameters}
+{\em window} & Target window \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_menu_abbec620bd41608fba287400ead4467aa}\label{class_menu_abbec620bd41608fba287400ead4467aa} 
+\index{Menu@{Menu}!moveDown@{moveDown}}
+\index{moveDown@{moveDown}!Menu@{Menu}}
+\doxysubsubsection{\texorpdfstring{moveDown()}{moveDown()}}
+{\footnotesize\ttfamily void Menu\+::move\+Down (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Used to switch to lower option. 
+
+
+
+Reimplemented in \mbox{\hyperlink{class_death_screen_a0a4d868fba6bc88cd1f278f1d7c160ee}{Death\+Screen}}.
+
+\Hypertarget{class_menu_a9686e8857d17d1d8411765f3482066f9}\label{class_menu_a9686e8857d17d1d8411765f3482066f9} 
+\index{Menu@{Menu}!moveUp@{moveUp}}
+\index{moveUp@{moveUp}!Menu@{Menu}}
+\doxysubsubsection{\texorpdfstring{moveUp()}{moveUp()}}
+{\footnotesize\ttfamily void Menu\+::move\+Up (\begin{DoxyParamCaption}\item[{int}]{min\+\_\+opt }\end{DoxyParamCaption})}
+
+Used to switch to a higher option
+
+
+\begin{DoxyParams}{Parameters}
+{\em min\+\_\+opt} & Dictates which sf\+::\+Text variable is the top one \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Menu.\+h\item 
+Menu.\+cpp\end{DoxyCompactItemize}

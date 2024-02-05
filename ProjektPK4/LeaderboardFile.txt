@@ -1,0 +1,15 @@
+PLAYER
+antek
+1750
+PLAYER
+dominika
+3550
+PLAYER
+kubus
+1100
+PLAYER
+miki
+12900
+PLAYER
+jojonbovi
+3600

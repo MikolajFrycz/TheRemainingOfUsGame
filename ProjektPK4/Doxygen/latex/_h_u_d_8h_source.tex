@@ -1,0 +1,39 @@
+\doxysection{HUD.\+h}
+\hypertarget{_h_u_d_8h_source}{}\label{_h_u_d_8h_source}\index{HUD.h@{HUD.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#include\ "{}Entity.h"{}}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ <sstream>}}
+\DoxyCodeLine{00004\ }
+\DoxyCodeLine{00008\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_h_u_d}{HUD}}}
+\DoxyCodeLine{00009\ \{}
+\DoxyCodeLine{00010\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00012\ \ \ \ \ \textcolor{keywordtype}{int}\ score\_count\_integer;}
+\DoxyCodeLine{00014\ \ \ \ \ \textcolor{keywordtype}{int}\ curr\_ammo;}
+\DoxyCodeLine{00016\ \ \ \ \ \textcolor{keywordtype}{int}\ max\_ammo;}
+\DoxyCodeLine{00018\ \ \ \ \ \textcolor{keywordtype}{int}\ max\_ammo\_begin;}
+\DoxyCodeLine{00019\ }
+\DoxyCodeLine{00021\ \ \ \ \ sf::Font\ font;}
+\DoxyCodeLine{00023\ \ \ \ \ sf::Text\ score\_count;}
+\DoxyCodeLine{00025\ \ \ \ \ sf::Text\ max\_ammo\_text;}
+\DoxyCodeLine{00027\ \ \ \ \ sf::Text\ curr\_ammo\_text;}
+\DoxyCodeLine{00029\ \ \ \ \ sf::Text\ ammo\_word\_text;}
+\DoxyCodeLine{00031\ \ \ \ \ sf::Text\ score\_text;}
+\DoxyCodeLine{00032\ \ \ \ \ }
+\DoxyCodeLine{00034\ \ \ \ \ std::string\ player\_name;}
+\DoxyCodeLine{00035\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00037\ \ \ \ \ \mbox{\hyperlink{class_h_u_d_a568b8ee1591f9ba3ed36ae05966f6b56}{HUD}}();}
+\DoxyCodeLine{00044\ \ \ \ \ \mbox{\hyperlink{class_h_u_d_a568b8ee1591f9ba3ed36ae05966f6b56}{HUD}}(\textcolor{keywordtype}{int}\ score\_start,\ \textcolor{keywordtype}{int}\ max\_ammo\_start,\ std::string\ player\_name,\ std::string\ font\_path);}
+\DoxyCodeLine{00046\ \ \ \ \ \mbox{\hyperlink{class_h_u_d_a1e1140a40e4bf72a45acf9f7b2119323}{\string~HUD}}();}
+\DoxyCodeLine{00050\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_h_u_d_a84696b90ce9824c1b2713572d692e022}{drawHUD}}(sf::RenderWindow\ \&target\_window);}
+\DoxyCodeLine{00054\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_h_u_d_ad6c0bd7f2bd14ad9672090969b293453}{updateScore}}(\textcolor{keywordtype}{int}\ added\_ammount);}
+\DoxyCodeLine{00058\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_h_u_d_a3a993c8cba58fd177ad9d3f438bacaca}{changeMaxAmmo}}(\textcolor{keywordtype}{int}\ new\_ammo);}
+\DoxyCodeLine{00062\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_h_u_d_a9626644cc0b1c5e81fb40e78bd71e284}{setHUDfor2ndPlayer}}(sf::Vector2f\ offset);}
+\DoxyCodeLine{00066\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_h_u_d_a76ee6f6bab398161ebcfc8dc4faf8429}{changeCurrAmmo}}(\textcolor{keywordtype}{int}\ add\_to\_ammo);}
+\DoxyCodeLine{00068\ \ \ \ \ \textcolor{keywordtype}{int}\ \&\mbox{\hyperlink{class_h_u_d_a5e0870f66b229f0fdddafd7fe0f45ab9}{getScoreCountInt}}();}
+\DoxyCodeLine{00070\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_h_u_d_a008a8b4a3db49cb092e52501a20d2070}{resetHUD}}();}
+\DoxyCodeLine{00071\ \};}
+\DoxyCodeLine{00072\ }
+
+\end{DoxyCode}

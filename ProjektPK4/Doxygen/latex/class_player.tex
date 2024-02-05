@@ -1,0 +1,253 @@
+\doxysection{Player Class Reference}
+\hypertarget{class_player}{}\label{class_player}\index{Player@{Player}}
+
+
+{\ttfamily \#include $<$Player.\+h$>$}
+
+Inheritance diagram for Player\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_player}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_player_affe0cc3cb714f6deb4e62f0c0d3f1fd8}\label{class_player_affe0cc3cb714f6deb4e62f0c0d3f1fd8} 
+{\bfseries Player} ()
+\begin{DoxyCompactList}\small\item\em \doxylink{class_player}{Player} default constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_player_a137acdf0d2e7d5a86b27b6a3264b79b9}{Player}} (int lives\+\_\+ct, int max\+\_\+amm, int curr\+\_\+amm, sf\+::\+Vector2f pos)
+\item 
+\Hypertarget{class_player_a749d2c00e1fe0f5c2746f7505a58c062}\label{class_player_a749d2c00e1fe0f5c2746f7505a58c062} 
+{\bfseries \texorpdfstring{$\sim$}{\string~}\+Player} ()
+\begin{DoxyCompactList}\small\item\em \doxylink{class_player}{Player} destructor. \end{DoxyCompactList}\item 
+\Hypertarget{class_player_a66461422eb34caea170eb3eb9d41a2a0}\label{class_player_a66461422eb34caea170eb3eb9d41a2a0} 
+void {\bfseries reset\+Ammo} (\mbox{\hyperlink{class_h_u_d}{HUD}} \&hud)
+\begin{DoxyCompactList}\small\item\em Resets ammo (Also on \doxylink{class_h_u_d}{HUD}) \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_player_a881b267d105de7cdb8db354cf2a2451c}{player1\+Movement}} (int windsize)
+\item 
+void \mbox{\hyperlink{class_player_adf5e2c213a38b37468c0f8e13aa2a153}{player2\+Movement}} (int windsize)
+\item 
+bool \mbox{\hyperlink{class_player_a03b5b98d95c5792e82de489b14cbdf80}{player\+Reload}} (sf\+::\+Clock \&reload\+Clock, sf\+::\+Keyboard\+::\+Key key)
+\item 
+bool \mbox{\hyperlink{class_player_a8d73938549cbfec86188962ad2b9ab5b}{shoot\+Pistol}} (sf\+::\+Keyboard\+::\+Key shootkey, \mbox{\hyperlink{class_bullet}{Bullet}} \&bullet, sf\+::\+Render\+Window \&target\+\_\+window, sf\+::\+Clock \&reload\+Clock, \mbox{\hyperlink{class_h_u_d}{HUD}} \&hud)
+\item 
+\Hypertarget{class_player_a1f39fabe5698d0b5e30c24a4eded085e}\label{class_player_a1f39fabe5698d0b5e30c24a4eded085e} 
+int {\bfseries get\+Bullet\+Clip\+Size} ()
+\begin{DoxyCompactList}\small\item\em Getter used for getting size of the bullet clip. \end{DoxyCompactList}\item 
+\Hypertarget{class_player_ad6f932af2ef6de2ec8b068f77f3fb33c}\label{class_player_ad6f932af2ef6de2ec8b068f77f3fb33c} 
+std\+::vector$<$ sf\+::\+Rectangle\+Shape $>$ \& {\bfseries get\+Bullet\+Clip} ()
+\begin{DoxyCompactList}\small\item\em Getter which returns bullet clip. \end{DoxyCompactList}\item 
+\Hypertarget{class_player_a4fa4a1864944b4794e0ef00867d80374}\label{class_player_a4fa4a1864944b4794e0ef00867d80374} 
+int {\bfseries get\+Curr\+Ammo} ()
+\begin{DoxyCompactList}\small\item\em Getter which returns current ammo value as an integer. \end{DoxyCompactList}\item 
+\Hypertarget{class_player_a0499495b81cb64a03de0df2df1310392}\label{class_player_a0499495b81cb64a03de0df2df1310392} 
+int {\bfseries get\+Max\+Ammo} ()
+\begin{DoxyCompactList}\small\item\em Getter which returns max ammo value as an integer. \end{DoxyCompactList}\item 
+\Hypertarget{class_player_afb5eb398a2804a7b6a7b86eee953b64a}\label{class_player_afb5eb398a2804a7b6a7b86eee953b64a} 
+bool {\bfseries get\+Is\+Shooting} ()
+\begin{DoxyCompactList}\small\item\em Getter which returns is\+Shooting value. \end{DoxyCompactList}\item 
+\Hypertarget{class_player_a9ac5983a7eb936e182a88bacc2d47922}\label{class_player_a9ac5983a7eb936e182a88bacc2d47922} 
+bool {\bfseries get\+Is\+Reloading} ()
+\begin{DoxyCompactList}\small\item\em Getter which returns is\+Reloading value. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_player_a716cad9b330e12615263c9e1e7c4fd98}{change\+Is\+Shooting\+Value}} (bool val)
+\item 
+\Hypertarget{class_player_aacaad06a8bebff9a8a903feb13774c85}\label{class_player_aacaad06a8bebff9a8a903feb13774c85} 
+void {\bfseries player\+Reset} ()
+\begin{DoxyCompactList}\small\item\em This method resets all player\textquotesingle{}s attributes to their beginning state. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_player_a4face082a302ee08dc9ab1100a7f192f}{shooting\+Animation}} (sf\+::\+Clock reloadclock)
+\item 
+void \mbox{\hyperlink{class_player_a9cc391aef32ca8613b6ad46a4c09d13f}{reload\+Animation}} (sf\+::\+Clock reloadclock, \mbox{\hyperlink{class_h_u_d}{HUD}} \&hud)
+\item 
+void \mbox{\hyperlink{class_player_a8e6c709cfa204fbcf1377fd0391cfa9d}{Draw}} (sf\+::\+Render\+Window \&target)
+\item 
+\Hypertarget{class_player_a04f7abd5f28dc33386ad6eda60a6766b}\label{class_player_a04f7abd5f28dc33386ad6eda60a6766b} 
+int {\bfseries get\+Shot\+Timer} ()
+\begin{DoxyCompactList}\small\item\em Getter used for getting shot\+Timer. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_entity}{Entity}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Entity} ()
+\begin{DoxyCompactList}\small\item\em Default \doxylink{class_entity}{Entity} constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_entity_a65e99028f5eaef4fe924e8fa009b1cde}{Entity}} (int lives\+\_\+ct, sf\+::\+Vector2f pos)
+\item 
+virtual {\bfseries \texorpdfstring{$\sim$}{\string~}\+Entity} ()
+\begin{DoxyCompactList}\small\item\em \doxylink{class_entity}{Entity} destructor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_entity_a6a50dadd36f7ad95c8b465b60644c4db}{set\+Texture}} (std\+::string path)
+\item 
+void \mbox{\hyperlink{class_entity_ad26d4be44d120852c83305883c51650a}{load\+Sprites\+From\+Sheet}} (int sprite\+Width, int sprite\+Height, int num\+Rows, int num\+Columns)
+\item 
+void \mbox{\hyperlink{class_entity_a2c2643b85cfa98766af34fc1ec30fa6e}{set\+Sprite}} (int num\+\_\+of\+\_\+sprite, sf\+::\+Vector2f pos)
+\item 
+void \mbox{\hyperlink{class_entity_a2d7f305a9642fecc73e85f77107c37c3}{Draw}} (sf\+::\+Render\+Window \&target)
+\item 
+void {\bfseries Animation} ()
+\begin{DoxyCompactList}\small\item\em Runs entity\textquotesingle{}s animation. \end{DoxyCompactList}\item 
+sf\+::\+Vector2f \& {\bfseries get\+Pos} ()
+\begin{DoxyCompactList}\small\item\em Getter used for getting position. \end{DoxyCompactList}\item 
+sf\+::\+Vector2f {\bfseries get\+Center} ()
+\begin{DoxyCompactList}\small\item\em Getter used for getting center of the entity. \end{DoxyCompactList}\item 
+sf\+::\+Sprite \& {\bfseries get\+Sprite} ()
+\begin{DoxyCompactList}\small\item\em Getter used for getting entity\textquotesingle{}s current sprite. \end{DoxyCompactList}\item 
+int \& {\bfseries get\+Lives} ()
+\begin{DoxyCompactList}\small\item\em Getter used for getting lives count. \end{DoxyCompactList}\item 
+void {\bfseries lives\+Decr} ()
+\begin{DoxyCompactList}\small\item\em Decrements lives count. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_entity_aa4c7fc6e9c9b30a194e9db6227f1b60c}{set\+Pos}} (sf\+::\+Vector2f pos)
+\item 
+void \mbox{\hyperlink{class_entity_ad03e94f741c3f68fefab35340f70ff35}{set\+Animation\+Frequency}} (int freq)
+\item 
+void {\bfseries update\+Health\+Bar} ()
+\begin{DoxyCompactList}\small\item\em Refreshes healthbar, based on current lives count \+: max lives count ratio. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\doxylink{class_player}{Player} class defines players\textquotesingle{} objects
+
+\doxylink{class_player}{Player} class defines all the attributes and methods needed for an \doxylink{class_entity}{Entity} class to transform into player 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_player_a137acdf0d2e7d5a86b27b6a3264b79b9}\label{class_player_a137acdf0d2e7d5a86b27b6a3264b79b9} 
+\index{Player@{Player}!Player@{Player}}
+\index{Player@{Player}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{Player()}{Player()}}
+{\footnotesize\ttfamily Player\+::\+Player (\begin{DoxyParamCaption}\item[{int}]{lives\+\_\+ct,  }\item[{int}]{max\+\_\+amm,  }\item[{int}]{curr\+\_\+amm,  }\item[{sf\+::\+Vector2f}]{pos }\end{DoxyParamCaption})}
+
+\doxylink{class_player}{Player} multi-\/argument constructor
+
+
+\begin{DoxyParams}{Parameters}
+{\em lives\+\_\+ct} & Initial lives count \\
+\hline
+{\em max\+\_\+amm} & Maximum ammo initial value \\
+\hline
+{\em curr\+\_\+amm} & Current ammo initial value \\
+\hline
+{\em pos} & Initial position \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_player_a716cad9b330e12615263c9e1e7c4fd98}\label{class_player_a716cad9b330e12615263c9e1e7c4fd98} 
+\index{Player@{Player}!changeIsShootingValue@{changeIsShootingValue}}
+\index{changeIsShootingValue@{changeIsShootingValue}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{changeIsShootingValue()}{changeIsShootingValue()}}
+{\footnotesize\ttfamily void Player\+::change\+Is\+Shooting\+Value (\begin{DoxyParamCaption}\item[{bool}]{val }\end{DoxyParamCaption})}
+
+is\+Shooting setter
+
+
+\begin{DoxyParams}{Parameters}
+{\em val} & Is\+Shooting\textquotesingle{}s new value \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_player_a8e6c709cfa204fbcf1377fd0391cfa9d}\label{class_player_a8e6c709cfa204fbcf1377fd0391cfa9d} 
+\index{Player@{Player}!Draw@{Draw}}
+\index{Draw@{Draw}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{Draw()}{Draw()}}
+{\footnotesize\ttfamily void Player\+::\+Draw (\begin{DoxyParamCaption}\item[{sf\+::\+Render\+Window \&}]{target }\end{DoxyParamCaption})}
+
+Polimorphic Draw method used to properly draw player to target window
+
+
+\begin{DoxyParams}{Parameters}
+{\em target} & Target window \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_player_a881b267d105de7cdb8db354cf2a2451c}\label{class_player_a881b267d105de7cdb8db354cf2a2451c} 
+\index{Player@{Player}!player1Movement@{player1Movement}}
+\index{player1Movement@{player1Movement}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{player1Movement()}{player1Movement()}}
+{\footnotesize\ttfamily void Player\+::player1\+Movement (\begin{DoxyParamCaption}\item[{int}]{windsize }\end{DoxyParamCaption})}
+
+Defines how the first player moves
+
+
+\begin{DoxyParams}{Parameters}
+{\em windsize} & size of window \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_player_adf5e2c213a38b37468c0f8e13aa2a153}\label{class_player_adf5e2c213a38b37468c0f8e13aa2a153} 
+\index{Player@{Player}!player2Movement@{player2Movement}}
+\index{player2Movement@{player2Movement}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{player2Movement()}{player2Movement()}}
+{\footnotesize\ttfamily void Player\+::player2\+Movement (\begin{DoxyParamCaption}\item[{int}]{windsize }\end{DoxyParamCaption})}
+
+Defines how the second player moves
+
+
+\begin{DoxyParams}{Parameters}
+{\em windsize} & size of window \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_player_a03b5b98d95c5792e82de489b14cbdf80}\label{class_player_a03b5b98d95c5792e82de489b14cbdf80} 
+\index{Player@{Player}!playerReload@{playerReload}}
+\index{playerReload@{playerReload}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{playerReload()}{playerReload()}}
+{\footnotesize\ttfamily bool Player\+::player\+Reload (\begin{DoxyParamCaption}\item[{sf\+::\+Clock \&}]{reload\+Clock,  }\item[{sf\+::\+Keyboard\+::\+Key}]{key }\end{DoxyParamCaption})}
+
+Performs the reloading procedure and returns true if a reload was initiated
+
+
+\begin{DoxyParams}{Parameters}
+{\em reload\+Clock} & Used for counting the duration of reload \\
+\hline
+{\em key} & Passed key variable defines which key is then used for reloading \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_player_a9cc391aef32ca8613b6ad46a4c09d13f}\label{class_player_a9cc391aef32ca8613b6ad46a4c09d13f} 
+\index{Player@{Player}!reloadAnimation@{reloadAnimation}}
+\index{reloadAnimation@{reloadAnimation}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{reloadAnimation()}{reloadAnimation()}}
+{\footnotesize\ttfamily void Player\+::reload\+Animation (\begin{DoxyParamCaption}\item[{sf\+::\+Clock}]{reloadclock,  }\item[{\mbox{\hyperlink{class_h_u_d}{HUD}} \&}]{hud }\end{DoxyParamCaption})}
+
+Used to perform player\textquotesingle{}s reloading animation
+
+
+\begin{DoxyParams}{Parameters}
+{\em reloadclock} & Times the reload animation \\
+\hline
+{\em hud} & Updates hud when finished \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_player_a4face082a302ee08dc9ab1100a7f192f}\label{class_player_a4face082a302ee08dc9ab1100a7f192f} 
+\index{Player@{Player}!shootingAnimation@{shootingAnimation}}
+\index{shootingAnimation@{shootingAnimation}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{shootingAnimation()}{shootingAnimation()}}
+{\footnotesize\ttfamily void Player\+::shooting\+Animation (\begin{DoxyParamCaption}\item[{sf\+::\+Clock}]{reloadclock }\end{DoxyParamCaption})}
+
+Used to perform player\textquotesingle{}s shooting animation
+
+
+\begin{DoxyParams}{Parameters}
+{\em reloadclock} & Times the animatioon \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_player_a8d73938549cbfec86188962ad2b9ab5b}\label{class_player_a8d73938549cbfec86188962ad2b9ab5b} 
+\index{Player@{Player}!shootPistol@{shootPistol}}
+\index{shootPistol@{shootPistol}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{shootPistol()}{shootPistol()}}
+{\footnotesize\ttfamily bool Player\+::shoot\+Pistol (\begin{DoxyParamCaption}\item[{sf\+::\+Keyboard\+::\+Key}]{shootkey,  }\item[{\mbox{\hyperlink{class_bullet}{Bullet}} \&}]{bullet,  }\item[{sf\+::\+Render\+Window \&}]{target\+\_\+window,  }\item[{sf\+::\+Clock \&}]{reload\+Clock,  }\item[{\mbox{\hyperlink{class_h_u_d}{HUD}} \&}]{hud }\end{DoxyParamCaption})}
+
+This method is used for player\textquotesingle{}s shooting and returns true if shot was initiated
+
+While used in the game\+\_\+loop, player can shoot bullets when a given key is pressed 
+\begin{DoxyParams}{Parameters}
+{\em shootkey} & Key used for shooting \\
+\hline
+{\em bullet} & \doxylink{class_bullet}{Bullet} objects used for drawing them \\
+\hline
+{\em target\+\_\+window} & Target window for drawing \\
+\hline
+{\em reload\+Clock} & Used for timing the reload \\
+\hline
+{\em hud} & \doxylink{class_h_u_d}{HUD} is needed so that the ammo count on screen can be updated \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Player.\+h\item 
+Player.\+cpp\end{DoxyCompactItemize}

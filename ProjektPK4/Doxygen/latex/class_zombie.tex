@@ -1,0 +1,123 @@
+\doxysection{Zombie Class Reference}
+\hypertarget{class_zombie}{}\label{class_zombie}\index{Zombie@{Zombie}}
+
+
+{\ttfamily \#include $<$Zombie.\+h$>$}
+
+Inheritance diagram for Zombie\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_zombie}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_zombie_a08e20d5470a17eddfe757812e400f2e9}\label{class_zombie_a08e20d5470a17eddfe757812e400f2e9} 
+{\bfseries Zombie} ()
+\begin{DoxyCompactList}\small\item\em \doxylink{class_zombie}{Zombie} default constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_zombie_a732231334381d8d21e60216c49cb18b9}{Zombie}} (int score\+\_\+val, int lives\+\_\+ct, int spawn\+\_\+freq\+\_\+ms, sf\+::\+Vector2f pos, float mov\+\_\+spd)
+\item 
+\Hypertarget{class_zombie_a7d5e6a2470bafba194f9d929576c5e27}\label{class_zombie_a7d5e6a2470bafba194f9d929576c5e27} 
+{\bfseries \texorpdfstring{$\sim$}{\string~}\+Zombie} ()
+\begin{DoxyCompactList}\small\item\em \doxylink{class_zombie}{Zombie} Destructor. \end{DoxyCompactList}\item 
+\Hypertarget{class_zombie_a60bc9322e70c8d6b3acfda48efda27dc}\label{class_zombie_a60bc9322e70c8d6b3acfda48efda27dc} 
+float {\bfseries get\+Mov\+Speed} ()
+\begin{DoxyCompactList}\small\item\em Getter used for getting movement speed. \end{DoxyCompactList}\item 
+\Hypertarget{class_zombie_ae125e27fd068cba6748bb706c015c4fc}\label{class_zombie_ae125e27fd068cba6748bb706c015c4fc} 
+int {\bfseries get\+Curr\+Spawn\+Freq} ()
+\begin{DoxyCompactList}\small\item\em Getter used for getting current spawn frequency. \end{DoxyCompactList}\item 
+\Hypertarget{class_zombie_ab2cf373cee02a0be95493d0f8927590c}\label{class_zombie_ab2cf373cee02a0be95493d0f8927590c} 
+void {\bfseries set\+Curr\+Spawn\+Freq} (int val)
+\begin{DoxyCompactList}\small\item\em Setter used for setting current spawn frequency. \end{DoxyCompactList}\item 
+\Hypertarget{class_zombie_af9d6fc72a60a85a7d0bc34812334773e}\label{class_zombie_af9d6fc72a60a85a7d0bc34812334773e} 
+int {\bfseries get\+Base\+Spawn\+Freq} ()
+\begin{DoxyCompactList}\small\item\em Getter used for getting Base spawn frequency. \end{DoxyCompactList}\item 
+\Hypertarget{class_zombie_a7c1e25391438db2a50cd6f27b860cac7}\label{class_zombie_a7c1e25391438db2a50cd6f27b860cac7} 
+void {\bfseries set\+Base\+Spawn\+Freq} (int val)
+\begin{DoxyCompactList}\small\item\em Setter used for setting Base spawn frequency. \end{DoxyCompactList}\item 
+\Hypertarget{class_zombie_aa49ab6154604f0e96f67a4365ac147ef}\label{class_zombie_aa49ab6154604f0e96f67a4365ac147ef} 
+void {\bfseries set\+Curr\+Mov\+Speed} (int val)
+\begin{DoxyCompactList}\small\item\em setter used for setting current movement speed \end{DoxyCompactList}\item 
+\Hypertarget{class_zombie_a30ce6413c61a7728eb4cd991aa2877ea}\label{class_zombie_a30ce6413c61a7728eb4cd991aa2877ea} 
+void {\bfseries reset\+Values} ()
+\begin{DoxyCompactList}\small\item\em Resets all \doxylink{class_zombie}{Zombie} attributes to their initial state. \end{DoxyCompactList}\item 
+\Hypertarget{class_zombie_aa88eac3b9e22bce5247332d629a7d760}\label{class_zombie_aa88eac3b9e22bce5247332d629a7d760} 
+void {\bfseries restart\+Clock} ()
+\begin{DoxyCompactList}\small\item\em Restarts spawn clock. \end{DoxyCompactList}\item 
+\Hypertarget{class_zombie_a469bf1c129b64ea77ec6e64abb1cbb08}\label{class_zombie_a469bf1c129b64ea77ec6e64abb1cbb08} 
+sf\+::\+Clock \& {\bfseries get\+Spawn\+Clock} ()
+\begin{DoxyCompactList}\small\item\em Getter used for getting spawn clock. \end{DoxyCompactList}\item 
+\Hypertarget{class_zombie_a3e3b4f2b96d5c28c8330effc8e6937c4}\label{class_zombie_a3e3b4f2b96d5c28c8330effc8e6937c4} 
+int {\bfseries get\+Score\+Value} ()
+\begin{DoxyCompactList}\small\item\em Getter used for getting score value. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_entity}{Entity}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Entity} ()
+\begin{DoxyCompactList}\small\item\em Default \doxylink{class_entity}{Entity} constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_entity_a65e99028f5eaef4fe924e8fa009b1cde}{Entity}} (int lives\+\_\+ct, sf\+::\+Vector2f pos)
+\item 
+virtual {\bfseries \texorpdfstring{$\sim$}{\string~}\+Entity} ()
+\begin{DoxyCompactList}\small\item\em \doxylink{class_entity}{Entity} destructor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_entity_a6a50dadd36f7ad95c8b465b60644c4db}{set\+Texture}} (std\+::string path)
+\item 
+void \mbox{\hyperlink{class_entity_ad26d4be44d120852c83305883c51650a}{load\+Sprites\+From\+Sheet}} (int sprite\+Width, int sprite\+Height, int num\+Rows, int num\+Columns)
+\item 
+void \mbox{\hyperlink{class_entity_a2c2643b85cfa98766af34fc1ec30fa6e}{set\+Sprite}} (int num\+\_\+of\+\_\+sprite, sf\+::\+Vector2f pos)
+\item 
+void \mbox{\hyperlink{class_entity_a2d7f305a9642fecc73e85f77107c37c3}{Draw}} (sf\+::\+Render\+Window \&target)
+\item 
+void {\bfseries Animation} ()
+\begin{DoxyCompactList}\small\item\em Runs entity\textquotesingle{}s animation. \end{DoxyCompactList}\item 
+sf\+::\+Vector2f \& {\bfseries get\+Pos} ()
+\begin{DoxyCompactList}\small\item\em Getter used for getting position. \end{DoxyCompactList}\item 
+sf\+::\+Vector2f {\bfseries get\+Center} ()
+\begin{DoxyCompactList}\small\item\em Getter used for getting center of the entity. \end{DoxyCompactList}\item 
+sf\+::\+Sprite \& {\bfseries get\+Sprite} ()
+\begin{DoxyCompactList}\small\item\em Getter used for getting entity\textquotesingle{}s current sprite. \end{DoxyCompactList}\item 
+int \& {\bfseries get\+Lives} ()
+\begin{DoxyCompactList}\small\item\em Getter used for getting lives count. \end{DoxyCompactList}\item 
+void {\bfseries lives\+Decr} ()
+\begin{DoxyCompactList}\small\item\em Decrements lives count. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_entity_aa4c7fc6e9c9b30a194e9db6227f1b60c}{set\+Pos}} (sf\+::\+Vector2f pos)
+\item 
+void \mbox{\hyperlink{class_entity_ad03e94f741c3f68fefab35340f70ff35}{set\+Animation\+Frequency}} (int freq)
+\item 
+void {\bfseries update\+Health\+Bar} ()
+\begin{DoxyCompactList}\small\item\em Refreshes healthbar, based on current lives count \+: max lives count ratio. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This class defines zombie objects which are enemies in this game
+
+Different types of zombies can be created with this class. It also inherits from the \doxylink{class_entity}{Entity} abstract class 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_zombie_a732231334381d8d21e60216c49cb18b9}\label{class_zombie_a732231334381d8d21e60216c49cb18b9} 
+\index{Zombie@{Zombie}!Zombie@{Zombie}}
+\index{Zombie@{Zombie}!Zombie@{Zombie}}
+\doxysubsubsection{\texorpdfstring{Zombie()}{Zombie()}}
+{\footnotesize\ttfamily Zombie\+::\+Zombie (\begin{DoxyParamCaption}\item[{int}]{score\+\_\+val,  }\item[{int}]{lives\+\_\+ct,  }\item[{int}]{spawn\+\_\+freq\+\_\+ms,  }\item[{sf\+::\+Vector2f}]{pos,  }\item[{float}]{mov\+\_\+spd }\end{DoxyParamCaption})}
+
+Multi argument constructor
+
+
+\begin{DoxyParams}{Parameters}
+{\em score\+\_\+val} & Amount of score gained after killing \\
+\hline
+{\em lives\+\_\+ct} & No of lives \\
+\hline
+{\em spawn\+\_\+freq\+\_\+ms} & Spawn frequency in ms \\
+\hline
+{\em pos} & Initial position \\
+\hline
+{\em mov\+\_\+spd} & Initial movement speed \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Zombie.\+h\item 
+Zombie.\+cpp\end{DoxyCompactItemize}

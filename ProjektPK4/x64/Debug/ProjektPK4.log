@@ -1,0 +1,215 @@
+﻿  Bullet.cpp
+  DeathScreen.cpp
+C:\Users\mikol\53e5d2dc-gr12-repo\Projekt\ProjektPK4\DeathScreen.cpp(11,96): warning C4244: "argument": konwersja z "T" do "T", możliwa utrata danych
+          with
+          [
+              T=unsigned int
+          ]
+          and
+          [
+              T=float
+          ]
+C:\Users\mikol\53e5d2dc-gr12-repo\Projekt\ProjektPK4\DeathScreen.cpp(11,65): warning C4244: "argument": konwersja z "T" do "T", możliwa utrata danych
+          with
+          [
+              T=unsigned int
+          ]
+          and
+          [
+              T=float
+          ]
+C:\Users\mikol\53e5d2dc-gr12-repo\Projekt\ProjektPK4\DeathScreen.cpp(30,96): warning C4244: "argument": konwersja z "T" do "T", możliwa utrata danych
+          with
+          [
+              T=unsigned int
+          ]
+          and
+          [
+              T=float
+          ]
+C:\Users\mikol\53e5d2dc-gr12-repo\Projekt\ProjektPK4\DeathScreen.cpp(30,65): warning C4244: "argument": konwersja z "T" do "T", możliwa utrata danych
+          with
+          [
+              T=unsigned int
+          ]
+          and
+          [
+              T=float
+          ]
+C:\Users\mikol\53e5d2dc-gr12-repo\Projekt\ProjektPK4\DeathScreen.cpp(35,96): warning C4244: "argument": konwersja z "T" do "T", możliwa utrata danych
+          with
+          [
+              T=unsigned int
+          ]
+          and
+          [
+              T=float
+          ]
+C:\Users\mikol\53e5d2dc-gr12-repo\Projekt\ProjektPK4\DeathScreen.cpp(35,65): warning C4244: "argument": konwersja z "T" do "T", możliwa utrata danych
+          with
+          [
+              T=unsigned int
+          ]
+          and
+          [
+              T=float
+          ]
+C:\Users\mikol\53e5d2dc-gr12-repo\Projekt\ProjektPK4\DeathScreen.cpp(48,98): warning C4244: "argument": konwersja z "T" do "T", możliwa utrata danych
+          with
+          [
+              T=unsigned int
+          ]
+          and
+          [
+              T=float
+          ]
+C:\Users\mikol\53e5d2dc-gr12-repo\Projekt\ProjektPK4\DeathScreen.cpp(48,66): warning C4244: "argument": konwersja z "T" do "T", możliwa utrata danych
+          with
+          [
+              T=unsigned int
+          ]
+          and
+          [
+              T=float
+          ]
+C:\Users\mikol\53e5d2dc-gr12-repo\Projekt\ProjektPK4\DeathScreen.cpp(56,98): warning C4244: "argument": konwersja z "T" do "T", możliwa utrata danych
+          with
+          [
+              T=unsigned int
+          ]
+          and
+          [
+              T=float
+          ]
+C:\Users\mikol\53e5d2dc-gr12-repo\Projekt\ProjektPK4\DeathScreen.cpp(56,66): warning C4244: "argument": konwersja z "T" do "T", możliwa utrata danych
+          with
+          [
+              T=unsigned int
+          ]
+          and
+          [
+              T=float
+          ]
+C:\Users\mikol\53e5d2dc-gr12-repo\Projekt\ProjektPK4\DeathScreen.cpp(64,98): warning C4244: "argument": konwersja z "T" do "T", możliwa utrata danych
+          with
+          [
+              T=unsigned int
+          ]
+          and
+          [
+              T=float
+          ]
+C:\Users\mikol\53e5d2dc-gr12-repo\Projekt\ProjektPK4\DeathScreen.cpp(64,66): warning C4244: "argument": konwersja z "T" do "T", możliwa utrata danych
+          with
+          [
+              T=unsigned int
+          ]
+          and
+          [
+              T=float
+          ]
+C:\Users\mikol\53e5d2dc-gr12-repo\Projekt\ProjektPK4\DeathScreen.cpp(78,65): warning C4244: "argument": konwersja z "T" do "T", możliwa utrata danych
+          with
+          [
+              T=unsigned int
+          ]
+          and
+          [
+              T=float
+          ]
+C:\Users\mikol\53e5d2dc-gr12-repo\Projekt\ProjektPK4\DeathScreen.cpp(84,97): warning C4244: "argument": konwersja z "T" do "T", możliwa utrata danych
+          with
+          [
+              T=unsigned int
+          ]
+          and
+          [
+              T=float
+          ]
+C:\Users\mikol\53e5d2dc-gr12-repo\Projekt\ProjektPK4\DeathScreen.cpp(84,65): warning C4244: "argument": konwersja z "T" do "T", możliwa utrata danych
+          with
+          [
+              T=unsigned int
+          ]
+          and
+          [
+              T=float
+          ]
+C:\Users\mikol\53e5d2dc-gr12-repo\Projekt\ProjektPK4\DeathScreen.cpp(89,97): warning C4244: "argument": konwersja z "T" do "T", możliwa utrata danych
+          with
+          [
+              T=unsigned int
+          ]
+          and
+          [
+              T=float
+          ]
+C:\Users\mikol\53e5d2dc-gr12-repo\Projekt\ProjektPK4\DeathScreen.cpp(89,65): warning C4244: "argument": konwersja z "T" do "T", możliwa utrata danych
+          with
+          [
+              T=unsigned int
+          ]
+          and
+          [
+              T=float
+          ]
+  Entity.cpp
+  Functions.cpp
+C:\Users\mikol\53e5d2dc-gr12-repo\Projekt\ProjektPK4\Functions.cpp(80,47): warning C4244: "argument": konwersja z "float" do "int", możliwa utrata danych
+C:\Users\mikol\53e5d2dc-gr12-repo\Projekt\ProjektPK4\Functions.cpp(81,61): warning C4244: "argument": konwersja z "float" do "int", możliwa utrata danych
+C:\Users\mikol\53e5d2dc-gr12-repo\Projekt\ProjektPK4\Functions.cpp(87,47): warning C4244: "argument": konwersja z "float" do "int", możliwa utrata danych
+C:\Users\mikol\53e5d2dc-gr12-repo\Projekt\ProjektPK4\Functions.cpp(88,61): warning C4244: "argument": konwersja z "float" do "int", możliwa utrata danych
+C:\Users\mikol\53e5d2dc-gr12-repo\Projekt\ProjektPK4\Functions.cpp(95,61): warning C4244: "argument": konwersja z "float" do "int", możliwa utrata danych
+C:\Users\mikol\53e5d2dc-gr12-repo\Projekt\ProjektPK4\Functions.cpp(96,47): warning C4244: "argument": konwersja z "float" do "int", możliwa utrata danych
+C:\Users\mikol\53e5d2dc-gr12-repo\Projekt\ProjektPK4\Functions.cpp(102,61): warning C4244: "argument": konwersja z "float" do "int", możliwa utrata danych
+C:\Users\mikol\53e5d2dc-gr12-repo\Projekt\ProjektPK4\Functions.cpp(103,47): warning C4244: "argument": konwersja z "float" do "int", możliwa utrata danych
+  Game.cpp
+C:\Users\mikol\53e5d2dc-gr12-repo\Projekt\ProjektPK4\Game.cpp(72,62): warning C4244: "argument": konwersja z "T" do "T", możliwa utrata danych
+          with
+          [
+              T=unsigned int
+          ]
+          and
+          [
+              T=float
+          ]
+C:\Users\mikol\53e5d2dc-gr12-repo\Projekt\ProjektPK4\Game.cpp(75,55): warning C4244: "argument": konwersja z "T" do "T", możliwa utrata danych
+          with
+          [
+              T=unsigned int
+          ]
+          and
+          [
+              T=float
+          ]
+C:\Users\mikol\53e5d2dc-gr12-repo\Projekt\ProjektPK4\Game.cpp(78,64): warning C4244: "argument": konwersja z "T" do "T", możliwa utrata danych
+          with
+          [
+              T=unsigned int
+          ]
+          and
+          [
+              T=float
+          ]
+C:\Users\mikol\53e5d2dc-gr12-repo\Projekt\ProjektPK4\Game.cpp(81,55): warning C4244: "argument": konwersja z "T" do "T", możliwa utrata danych
+          with
+          [
+              T=unsigned int
+          ]
+          and
+          [
+              T=float
+          ]
+C:\Users\mikol\53e5d2dc-gr12-repo\Projekt\ProjektPK4\Game.cpp(861,19): warning C4244: "inicjowanie": konwersja z "double" do "float", możliwa utrata danych
+C:\Users\mikol\53e5d2dc-gr12-repo\Projekt\ProjektPK4\Game.cpp(867,21): warning C4267: "=": konwersja z "size_t" do "int", możliwa utrata danych
+C:\Users\mikol\53e5d2dc-gr12-repo\Projekt\ProjektPK4\Game.cpp(929,20): warning C4244: "inicjowanie": konwersja z "double" do "float", możliwa utrata danych
+C:\Users\mikol\53e5d2dc-gr12-repo\Projekt\ProjektPK4\Game.cpp(935,22): warning C4267: "=": konwersja z "size_t" do "int", możliwa utrata danych
+  HUD.cpp
+  Menu.cpp
+  Player.cpp
+C:\Users\mikol\53e5d2dc-gr12-repo\Projekt\ProjektPK4\Player.cpp(188,25): warning C4267: "return": konwersja z "size_t" do "int", możliwa utrata danych
+  ProjektPK4.cpp
+  Zombie.cpp
+C:\Users\mikol\53e5d2dc-gr12-repo\Projekt\ProjektPK4\Zombie.cpp(19,19): warning C4244: "=": konwersja z "int" do "float", możliwa utrata danych
+  Generowanie kodu...
+  ProjektPK4.vcxproj -> C:\Users\mikol\53e5d2dc-gr12-repo\Projekt\x64\Debug\The Remaining of Us.exe
