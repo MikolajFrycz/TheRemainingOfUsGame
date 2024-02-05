@@ -1,4 +1,4 @@
-The Remaining of Us
+## The Remaining of Us
 
 Zombie-shooter 2D survival game written in C++ using SFML library.
 
