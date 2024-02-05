@@ -12,7 +12,7 @@ You are the last man standing between your bunker and countless dead.
 Strafe, shoot, reload and slay zombies for as long as you can!
 
 ## Installation
-Simply unrar the package and run the .exe file.
+Just download the TheRemainingOfUs.rar and simply unrar the package and run the .exe file.
 
 ## Assets
 All the used graphics were created by me in MS Paint on maximum zoom
